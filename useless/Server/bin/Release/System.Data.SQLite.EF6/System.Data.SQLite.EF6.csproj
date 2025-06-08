@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>System.Data.SQLite.EF6</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net46</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="System.Data.SQLite.SQLiteProviderServices.StoreSchemaDefinition.ssdl" />
+    <None Remove="System.Data.SQLite.Common.ConceptualSchemaDefinition.csdl" />
+    <None Remove="System.Data.SQLite.SQLiteProviderServices.ProviderManifest.xml" />
+    <None Remove="System.Data.SQLite.SQLiteProviderServices.StoreSchemaMapping.msl" />
+    <EmbeddedResource Include="System.Data.SQLite.SQLiteProviderServices.StoreSchemaDefinition.ssdl" LogicalName="System.Data.SQLite.SQLiteProviderServices.StoreSchemaDefinition.ssdl" />
+    <EmbeddedResource Include="System.Data.SQLite.Common.ConceptualSchemaDefinition.csdl" LogicalName="System.Data.SQLite.Common.ConceptualSchemaDefinition.csdl" />
+    <EmbeddedResource Include="System.Data.SQLite.SQLiteProviderServices.ProviderManifest.xml" LogicalName="System.Data.SQLite.SQLiteProviderServices.ProviderManifest.xml" />
+    <EmbeddedResource Include="System.Data.SQLite.SQLiteProviderServices.StoreSchemaMapping.msl" LogicalName="System.Data.SQLite.SQLiteProviderServices.StoreSchemaMapping.msl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework" />
+    <Reference Include="System.Data">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite" />
+    <Reference Include="System.Xml">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

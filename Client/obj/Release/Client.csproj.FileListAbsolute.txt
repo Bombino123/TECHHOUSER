@@ -1,0 +1,6 @@
+C:\DNspy export Libirum\Client\bin\Release\Client.exe
+C:\DNspy export Libirum\Client\bin\Release\Client.pdb
+C:\DNspy export Libirum\Client\obj\Release\Client.csproj.AssemblyReference.cache
+C:\DNspy export Libirum\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
+C:\DNspy export Libirum\Client\obj\Release\Client.exe
+C:\DNspy export Libirum\Client\obj\Release\Client.pdb

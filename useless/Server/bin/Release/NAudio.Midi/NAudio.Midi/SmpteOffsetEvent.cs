@@ -1,0 +1,69 @@
+using System;
+using System.IO;
+
+namespace NAudio.Midi;
+
+public class SmpteOffsetEvent : MetaEvent
+{
+	private readonly byte hours;
+
+	private readonly byte minutes;
+
+	private readonly byte seconds;
+
+	private readonly byte frames;
+
+	private readonly byte subFrames;
+
+	public int Hours => hours;
+
+	public int Minutes => minutes;
+
+	public int Seconds => seconds;
+
+	public int Frames => frames;
+
+	public int SubFrames => subFrames;
+
+	public SmpteOffsetEvent(byte hours, byte minutes, byte seconds, byte frames, byte subFrames)
+	{
+		this.hours = hours;
+		this.minutes = minutes;
+		this.seconds = seconds;
+		this.frames = frames;
+		this.subFrames = subFrames;
+	}
+
+	public SmpteOffsetEvent(BinaryReader br, int length)
+	{
+		if (length != 5)
+		{
+			throw new FormatException($"Invalid SMPTE Offset length: Got {length}, expected 5");
+		}
+		hours = br.ReadByte();
+		minutes = br.ReadByte();
+		seconds = br.ReadByte();
+		frames = br.ReadByte();
+		subFrames = br.ReadByte();
+	}
+
+	public override MidiEvent Clone()
+	{
+		return (SmpteOffsetEvent)MemberwiseClone();
+	}
+
+	public override string ToString()
+	{
+		return $"{base.ToString()} {hours}:{minutes}:{seconds}:{frames}:{subFrames}";
+	}
+
+	public override void Export(ref long absoluteTime, BinaryWriter writer)
+	{
+		base.Export(ref absoluteTime, writer);
+		writer.Write(hours);
+		writer.Write(minutes);
+		writer.Write(seconds);
+		writer.Write(frames);
+		writer.Write(subFrames);
+	}
+}

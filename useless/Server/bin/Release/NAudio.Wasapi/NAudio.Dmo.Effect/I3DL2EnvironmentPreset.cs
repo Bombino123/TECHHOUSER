@@ -1,0 +1,35 @@
+namespace NAudio.Dmo.Effect;
+
+public enum I3DL2EnvironmentPreset
+{
+	Default,
+	Generic,
+	PaddedCell,
+	Room,
+	Bathroom,
+	LivingRoom,
+	StoneRoom,
+	Auditorium,
+	ConcertHall,
+	Cave,
+	Arena,
+	Hangar,
+	CarpetedHallway,
+	Hallway,
+	StoneCorridor,
+	Alley,
+	Forest,
+	City,
+	Mountains,
+	Quarry,
+	Plain,
+	ParkingLot,
+	SewerPipe,
+	UnderWater,
+	SmallRoom,
+	MediumRoom,
+	LargeRoom,
+	MediumHall,
+	LargeHall,
+	Plate
+}

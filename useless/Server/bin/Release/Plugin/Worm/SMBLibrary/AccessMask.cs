@@ -1,0 +1,21 @@
+using System;
+using System.Runtime.InteropServices;
+
+namespace SMBLibrary;
+
+[Flags]
+[ComVisible(true)]
+public enum AccessMask : uint
+{
+	DELETE = 0x10000u,
+	READ_CONTROL = 0x20000u,
+	WRITE_DAC = 0x40000u,
+	WRITE_OWNER = 0x80000u,
+	SYNCHRONIZE = 0x100000u,
+	ACCESS_SYSTEM_SECURITY = 0x1000000u,
+	MAXIMUM_ALLOWED = 0x2000000u,
+	GENERIC_ALL = 0x10000000u,
+	GENERIC_EXECUTE = 0x20000000u,
+	GENERIC_WRITE = 0x40000000u,
+	GENERIC_READ = 0x80000000u
+}

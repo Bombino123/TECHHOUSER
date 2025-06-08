@@ -1,0 +1,38 @@
+namespace System.Data.Entity.Core.Mapping.ViewGeneration.Utils;
+
+internal enum ViewGenErrorCode
+{
+	Value = 3000,
+	InvalidCondition = 3001,
+	KeyConstraintViolation = 3002,
+	KeyConstraintUpdateViolation = 3003,
+	AttributesUnrecoverable = 3004,
+	AmbiguousMultiConstants = 3005,
+	NonKeyProjectedWithOverlappingPartitions = 3007,
+	ConcurrencyDerivedClass = 3008,
+	ConcurrencyTokenHasCondition = 3009,
+	DomainConstraintViolation = 3012,
+	ForeignKeyMissingTableMapping = 3013,
+	ForeignKeyNotGuaranteedInCSpace = 3014,
+	ForeignKeyMissingRelationshipMapping = 3015,
+	ForeignKeyUpperBoundMustBeOne = 3016,
+	ForeignKeyLowerBoundMustBeOne = 3017,
+	ForeignKeyParentTableNotMappedToEnd = 3018,
+	ForeignKeyColumnOrderIncorrect = 3019,
+	DisjointConstraintViolation = 3020,
+	DuplicateCPropertiesMapped = 3021,
+	NotNullNoProjectedSlot = 3022,
+	NoDefaultValue = 3023,
+	KeyNotMappedForCSideExtent = 3024,
+	KeyNotMappedForTable = 3025,
+	PartitionConstraintViolation = 3026,
+	MissingExtentMapping = 3027,
+	ImpossibleCondition = 3030,
+	NullableMappingForNonNullableColumn = 3031,
+	ErrorPatternConditionError = 3032,
+	ErrorPatternSplittingError = 3033,
+	ErrorPatternInvalidPartitionError = 3034,
+	ErrorPatternMissingMappingError = 3035,
+	NoJoinKeyOrFKProvidedInMapping = 3036,
+	MultipleFragmentsBetweenCandSExtentWithDistinct = 3037
+}

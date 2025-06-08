@@ -1,0 +1,14 @@
+namespace GMap.NET;
+
+public enum DirectionsStatusCode
+{
+	UNKNOWN_ERROR = 0,
+	OK = 0,
+	NOT_FOUND = 1,
+	ZERO_RESULTS = 2,
+	MAX_WAYPOINTS_EXCEEDED = 3,
+	INVALID_REQUEST = 4,
+	OVER_QUERY_LIMIT = 5,
+	REQUEST_DENIED = 6,
+	EXCEPTION_IN_CODE = 7
+}

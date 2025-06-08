@@ -1,0 +1,18 @@
+using System;
+using System.Runtime.InteropServices;
+
+namespace SMBLibrary;
+
+[Flags]
+[ComVisible(true)]
+public enum SecurityInformation : uint
+{
+	OWNER_SECURITY_INFORMATION = 1u,
+	GROUP_SECURITY_INFORMATION = 2u,
+	DACL_SECURITY_INFORMATION = 4u,
+	SACL_SECURITY_INFORMATION = 8u,
+	LABEL_SECURITY_INFORMATION = 0x10u,
+	ATTRIBUTE_SECURITY_INFORMATION = 0x20u,
+	SCOPE_SECURITY_INFORMATION = 0x40u,
+	BACKUP_SECURITY_INFORMATION = 0x10000u
+}

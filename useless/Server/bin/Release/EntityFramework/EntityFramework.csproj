@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EntityFramework</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="System.Data.Resources.AnnotationSchema.xsd" />
+    <None Remove="System.Data.Resources.CodeGenerationSchema.xsd" />
+    <None Remove="System.Data.Resources.CSDLSchema_1.xsd" />
+    <None Remove="System.Data.Resources.CSDLSchema_1_1.xsd" />
+    <None Remove="System.Data.Resources.CSDLSchema_2.xsd" />
+    <None Remove="System.Data.Resources.CSDLSchema_3.xsd" />
+    <None Remove="System.Data.Resources.EntityStoreSchemaGenerator.xsd" />
+    <None Remove="System.Data.Resources.SSDLSchema.xsd" />
+    <None Remove="System.Data.Resources.SSDLSchema_2.xsd" />
+    <None Remove="System.Data.Resources.SSDLSchema_3.xsd" />
+    <None Remove="System.Data.Resources.CSMSL_1.xsd" />
+    <None Remove="System.Data.Resources.CSMSL_2.xsd" />
+    <None Remove="System.Data.Resources.CSMSL_3.xsd" />
+    <None Remove="System.Data.Resources.ProviderServices.ProviderManifest.xsd" />
+    <None Remove="System.Data.Resources.DbProviderServices.ConceptualSchemaDefinition.csdl" />
+    <None Remove="System.Data.Resources.DbProviderServices.ConceptualSchemaDefinitionVersion3.csdl" />
+    <EmbeddedResource Include="System.Data.Resources.AnnotationSchema.xsd" LogicalName="System.Data.Resources.AnnotationSchema.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.CodeGenerationSchema.xsd" LogicalName="System.Data.Resources.CodeGenerationSchema.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.CSDLSchema_1.xsd" LogicalName="System.Data.Resources.CSDLSchema_1.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.CSDLSchema_1_1.xsd" LogicalName="System.Data.Resources.CSDLSchema_1_1.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.CSDLSchema_2.xsd" LogicalName="System.Data.Resources.CSDLSchema_2.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.CSDLSchema_3.xsd" LogicalName="System.Data.Resources.CSDLSchema_3.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.EntityStoreSchemaGenerator.xsd" LogicalName="System.Data.Resources.EntityStoreSchemaGenerator.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.SSDLSchema.xsd" LogicalName="System.Data.Resources.SSDLSchema.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.SSDLSchema_2.xsd" LogicalName="System.Data.Resources.SSDLSchema_2.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.SSDLSchema_3.xsd" LogicalName="System.Data.Resources.SSDLSchema_3.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.CSMSL_1.xsd" LogicalName="System.Data.Resources.CSMSL_1.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.CSMSL_2.xsd" LogicalName="System.Data.Resources.CSMSL_2.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.CSMSL_3.xsd" LogicalName="System.Data.Resources.CSMSL_3.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.ProviderServices.ProviderManifest.xsd" LogicalName="System.Data.Resources.ProviderServices.ProviderManifest.xsd" />
+    <EmbeddedResource Include="System.Data.Resources.DbProviderServices.ConceptualSchemaDefinition.csdl" LogicalName="System.Data.Resources.DbProviderServices.ConceptualSchemaDefinition.csdl" />
+    <EmbeddedResource Include="System.Data.Resources.DbProviderServices.ConceptualSchemaDefinitionVersion3.csdl" LogicalName="System.Data.Resources.DbProviderServices.ConceptualSchemaDefinitionVersion3.csdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Core">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/Microsoft.CSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

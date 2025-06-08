@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EntityFramework.SqlServer</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinition.ssdl" />
+    <None Remove="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinitionVersion3.ssdl" />
+    <None Remove="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinitionVersion3_Sql8.ssdl" />
+    <None Remove="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinition_Sql8.ssdl" />
+    <None Remove="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaMapping.msl" />
+    <None Remove="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaMappingVersion3.msl" />
+    <None Remove="System.Data.Resources.SqlClient.SqlProviderServices.ProviderManifest.xml" />
+    <EmbeddedResource Include="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinition.ssdl" LogicalName="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinition.ssdl" />
+    <EmbeddedResource Include="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinitionVersion3.ssdl" LogicalName="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinitionVersion3.ssdl" />
+    <EmbeddedResource Include="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinitionVersion3_Sql8.ssdl" LogicalName="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinitionVersion3_Sql8.ssdl" />
+    <EmbeddedResource Include="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinition_Sql8.ssdl" LogicalName="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaDefinition_Sql8.ssdl" />
+    <EmbeddedResource Include="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaMapping.msl" LogicalName="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaMapping.msl" />
+    <EmbeddedResource Include="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaMappingVersion3.msl" LogicalName="System.Data.Resources.SqlClient.SqlProviderServices.StoreSchemaMappingVersion3.msl" />
+    <EmbeddedResource Include="System.Data.Resources.SqlClient.SqlProviderServices.ProviderManifest.xml" LogicalName="System.Data.Resources.SqlClient.SqlProviderServices.ProviderManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/Microsoft.CSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

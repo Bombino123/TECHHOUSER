@@ -1,0 +1,14 @@
+using System;
+
+namespace Toolbelt.Drawing.Win32;
+
+[Flags]
+internal enum LOAD_LIBRARY : uint
+{
+	DONT_RESOLVE_DLL_REFERENCES = 1u,
+	IGNORE_CODE_AUTHZ_LEVEL = 0x10u,
+	AS_DATAFILE = 2u,
+	AS_DATAFILE_EXCLUSIVE = 0x40u,
+	AS_IMAGE_RESOURCE = 0x20u,
+	WITH_ALTERED_SEARCH_PATH = 8u
+}

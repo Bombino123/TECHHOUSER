@@ -1,0 +1,6 @@
+{
+  "enableWarnings": true,
+  "highlightValidHooks": true,
+  "showDeprecationWarnings": true,
+  "customHooksEnabled": false
+}

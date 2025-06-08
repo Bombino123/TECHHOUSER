@@ -1,0 +1,52 @@
+using System.Runtime.InteropServices;
+
+namespace SMBLibrary;
+
+[ComVisible(true)]
+public enum DeviceType : uint
+{
+	Beep = 1u,
+	CDRom,
+	CDRomFileSystem,
+	Controller,
+	DataLink,
+	DFS,
+	Disk,
+	DiskFileSystem,
+	FileSystem,
+	ImportPort,
+	Keyboard,
+	MailSlot,
+	MidiIn,
+	MidiOut,
+	Mouse,
+	MultiUNCProvider,
+	NamedPipe,
+	Network,
+	NetworkBrowser,
+	NetworkFileSystem,
+	Null,
+	ParallelPort,
+	PhysicalNetcard,
+	Printer,
+	Scanner,
+	SerialMousePort,
+	SerialPort,
+	Screen,
+	Sound,
+	Streams,
+	Tape,
+	TapeFileSystem,
+	Transport,
+	Unknown,
+	Video,
+	VirtualDisk,
+	WaveIn,
+	WaveOut,
+	PS2Port,
+	NetworkRedirector,
+	Battery,
+	BusExtender,
+	Modem,
+	VirtualDosMachine
+}

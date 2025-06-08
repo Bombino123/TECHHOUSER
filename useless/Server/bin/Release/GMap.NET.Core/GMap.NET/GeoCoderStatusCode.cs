@@ -1,0 +1,13 @@
+namespace GMap.NET;
+
+public enum GeoCoderStatusCode
+{
+	UNKNOWN_ERROR,
+	OK,
+	ZERO_RESULTS,
+	OVER_QUERY_LIMIT,
+	REQUEST_DENIED,
+	INVALID_REQUEST,
+	ERROR,
+	EXCEPTION_IN_CODE
+}

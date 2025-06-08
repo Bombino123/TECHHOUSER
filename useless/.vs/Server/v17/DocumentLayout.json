@@ -1,0 +1,991 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\helper\\formmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\helper\\formmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formxmrminer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formxmrminer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formwinlocker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formwinlocker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formvolumecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formvolumecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formsystemsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formsystemsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formspeakerbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formspeakerbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formshell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formshell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formreverseproxyu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formreverseproxyu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formreverseproxyr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formreverseproxyr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formreverseproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formreverseproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formregistervalueeditword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formregistervalueeditword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formregistervalueeditmultistring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formregistervalueeditmultistring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formregistervalueeditbinary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formregistervalueeditbinary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formregedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formregedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formperformance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formperformance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formnotepad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formnotepad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formnetstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formnetstat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formmineretc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formmineretc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formmicrophone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formmicrophone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formkeyloggerpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formkeyloggerpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formkeylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formkeylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\forminput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\forminput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formhvncrun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formhvncrun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formhvnc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formhvnc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formhostsfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formhostsfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formfun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formfun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formexplorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formexplorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formdownload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formdownload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formdevicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formdevicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formdesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formdesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formddos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formddos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formclipper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formclipper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formclipboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formclipboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formcertificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formcertificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formbulider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formbulider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formautorunset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formautorunset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|c:\\users\\cajba\\downloads\\lebebrium useless\\server\\forms\\formautorun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formautorun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\forms\\formabout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formabout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\properties\\resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\properties\\resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\messages\\handlerdesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\messages\\handlerdesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\messages\\handlercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\messages\\handlercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\messages\\handlerhvnc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\messages\\handlerhvnc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\messages\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\messages\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\forms\\formwinlocker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\forms\\formwinlocker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\obfuscator\\obfuscator\\intprotect\\intencoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\obfuscator\\obfuscator\\intprotect\\intencoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\messages\\handlerclipper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\messages\\handlerclipper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|C:\\Users\\cajba\\Downloads\\lebebrium useless\\server\\messages\\handlerddos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29494141-C5E7-44C9-B8EA-5EE04278EFCD}|Server\\Server.csproj|solutionrelative:server\\messages\\handlerddos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormMaterial.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Helper\\FormMaterial.cs",
+              "RelativeDocumentMoniker": "Server\\Helper\\FormMaterial.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Helper\\FormMaterial.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Helper\\FormMaterial.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:29:17.614Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormXmrMiner.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormXmrMiner.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormXmrMiner.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormXmrMiner.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormXmrMiner.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:29:13.914Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormWinlocker.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormWinlocker.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormWinlocker.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormWinlocker.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormWinlocker.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:29:12.569Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormWindow.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormWindow.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormWindow.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormWindow.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormWindow.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:29:11.524Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormVolumeControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormVolumeControl.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormVolumeControl.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormVolumeControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormVolumeControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:29:09.149Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Server\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Form1.Designer.cs",
+              "RelativeToolTip": "Server\\Form1.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:19:32.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Form1.cs",
+              "RelativeDocumentMoniker": "Server\\Form1.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T15:40:28.655Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormUpload.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormUpload.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormUpload.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormUpload.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormUpload.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:29:08.185Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormSystemSound.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormSystemSound.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormSystemSound.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormSystemSound.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormSystemSound.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:29:06.599Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormSpeakerBot.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormSpeakerBot.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormSpeakerBot.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormSpeakerBot.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormSpeakerBot.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:29:05.335Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormShell.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormShell.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormShell.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormShell.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormShell.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:29:01.06Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormSettings.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormSettings.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormSettings.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormSettings.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormSettings.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:29:00.28Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormService.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormService.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormService.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormService.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormService.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:56.255Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormReverseProxyU.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormReverseProxyU.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormReverseProxyU.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormReverseProxyU.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormReverseProxyU.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:55.438Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormReverseProxyR.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormReverseProxyR.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormReverseProxyR.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormReverseProxyR.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormReverseProxyR.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:54.405Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FormReverseProxy.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormReverseProxy.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormReverseProxy.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormReverseProxy.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormReverseProxy.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:52.555Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormRegisterValueEditWord.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormRegisterValueEditWord.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormRegisterValueEditWord.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormRegisterValueEditWord.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormRegisterValueEditWord.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:51.4Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FormRegisterValueEditMultiString.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormRegisterValueEditMultiString.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormRegisterValueEditMultiString.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormRegisterValueEditMultiString.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormRegisterValueEditMultiString.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:48.695Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FormRegisterValueEditBinary.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormRegisterValueEditBinary.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormRegisterValueEditBinary.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormRegisterValueEditBinary.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormRegisterValueEditBinary.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:43.2Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FormRegedit.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormRegedit.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormRegedit.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormRegedit.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormRegedit.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:41.29Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormPrograms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormPrograms.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormPrograms.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormPrograms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormPrograms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:37.99Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FormProcess.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormProcess.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormProcess.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormProcess.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormProcess.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:36.665Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FormPerformance.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormPerformance.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormPerformance.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormPerformance.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormPerformance.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:34.876Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FormNotepad.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormNotepad.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormNotepad.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormNotepad.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormNotepad.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:32.742Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FormNetstat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormNetstat.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormNetstat.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormNetstat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormNetstat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:31.111Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FormMinerEtc.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormMinerEtc.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormMinerEtc.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormMinerEtc.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormMinerEtc.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:29.026Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FormMicrophone.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormMicrophone.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormMicrophone.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormMicrophone.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormMicrophone.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:27.401Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FormMap.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormMap.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormMap.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormMap.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormMap.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:25.341Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FormKeyLoggerPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormKeyLoggerPanel.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormKeyLoggerPanel.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormKeyLoggerPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormKeyLoggerPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:22.881Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FormKeyLogger.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormKeyLogger.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormKeyLogger.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormKeyLogger.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormKeyLogger.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:21.266Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FormInput.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormInput.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormInput.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormInput.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormInput.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:19.896Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "FormHVNCrun.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormHVNCrun.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormHVNCrun.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormHVNCrun.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormHVNCrun.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:18.736Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "FormHVNC.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormHVNC.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormHVNC.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormHVNC.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormHVNC.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:17.822Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "FormHostsFile.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormHostsFile.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormHostsFile.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormHostsFile.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormHostsFile.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:15.646Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FormFun.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormFun.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormFun.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormFun.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormFun.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:11.067Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "FormExplorer.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormExplorer.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormExplorer.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormExplorer.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormExplorer.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:07.775Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "FormDownload.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormDownload.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormDownload.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormDownload.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormDownload.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:05.127Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "FormDeviceManager.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormDeviceManager.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormDeviceManager.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormDeviceManager.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormDeviceManager.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:02.477Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "FormDesktop.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormDesktop.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormDesktop.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormDesktop.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormDesktop.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:28:00.027Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "FormDDos.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormDDos.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormDDos.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormDDos.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormDDos.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:27:57.667Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "FormClipper.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormClipper.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormClipper.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormClipper.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormClipper.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:27:54.082Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "FormClipboard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormClipboard.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormClipboard.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormClipboard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormClipboard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:27:49.271Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "FormChat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormChat.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormChat.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormChat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormChat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:27:47.027Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "FormCertificate.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormCertificate.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormCertificate.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormCertificate.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormCertificate.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:27:44.467Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "FormCamera.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormCamera.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormCamera.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormCamera.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormCamera.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:27:41.859Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "FormBulider.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormBulider.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormBulider.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormBulider.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormBulider.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:27:37.526Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "FormAutoRunSet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormAutoRunSet.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormAutoRunSet.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormAutoRunSet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormAutoRunSet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:27:26.953Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "FormAutoRun.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormAutoRun.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormAutoRun.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormAutoRun.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormAutoRun.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:27:22.111Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Resources.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Properties\\Resources.cs",
+              "RelativeDocumentMoniker": "Server\\Properties\\Resources.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Properties\\Resources.cs",
+              "RelativeToolTip": "Server\\Properties\\Resources.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwB4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T15:43:22.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Form1.resx",
+              "RelativeDocumentMoniker": "Server\\Form1.resx",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Form1.resx",
+              "RelativeToolTip": "Server\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-01-30T15:43:18.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Form1.cs",
+              "RelativeDocumentMoniker": "Server\\Form1.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Form1.cs",
+              "RelativeToolTip": "Server\\Form1.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T15:41:25.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "FormAbout.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormAbout.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormAbout.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormAbout.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Server\\Forms\\FormAbout.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:53:08.725Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "HandlerDesktop.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\HandlerDesktop.cs",
+              "RelativeDocumentMoniker": "Server\\Messages\\HandlerDesktop.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\HandlerDesktop.cs",
+              "RelativeToolTip": "Server\\Messages\\HandlerDesktop.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAqwDEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:08:26.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "HandlerHVNC.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\HandlerHVNC.cs",
+              "RelativeDocumentMoniker": "Server\\Messages\\HandlerHVNC.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\HandlerHVNC.cs",
+              "RelativeToolTip": "Server\\Messages\\HandlerHVNC.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBYAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:07:33.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Packet.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\Packet.cs",
+              "RelativeDocumentMoniker": "Server\\Messages\\Packet.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\Packet.cs",
+              "RelativeToolTip": "Server\\Messages\\Packet.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAuwKEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:05:49.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "FormWinlocker.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormWinlocker.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\FormWinlocker.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Forms\\FormWinlocker.cs",
+              "RelativeToolTip": "Server\\Forms\\FormWinlocker.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwDAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:02:10.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "IntEncoding.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Obfuscator\\Obfuscator\\IntProtect\\IntEncoding.cs",
+              "RelativeDocumentMoniker": "Server\\Obfuscator\\Obfuscator\\IntProtect\\IntEncoding.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Obfuscator\\Obfuscator\\IntProtect\\IntEncoding.cs",
+              "RelativeToolTip": "Server\\Obfuscator\\Obfuscator\\IntProtect\\IntEncoding.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:02:03.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "HandlerClipper.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\HandlerClipper.cs",
+              "RelativeDocumentMoniker": "Server\\Messages\\HandlerClipper.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\HandlerClipper.cs",
+              "RelativeToolTip": "Server\\Messages\\HandlerClipper.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAuwDcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T17:48:39.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "HandlerCamera.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\HandlerCamera.cs",
+              "RelativeDocumentMoniker": "Server\\Messages\\HandlerCamera.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\HandlerCamera.cs",
+              "RelativeToolTip": "Server\\Messages\\HandlerCamera.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAqwEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T18:07:57.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "HandlerDDos.cs",
+              "DocumentMoniker": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\HandlerDDos.cs",
+              "RelativeDocumentMoniker": "Server\\Messages\\HandlerDDos.cs",
+              "ToolTip": "C:\\Users\\cajba\\Downloads\\lebebrium useless\\Server\\Messages\\HandlerDDos.cs",
+              "RelativeToolTip": "Server\\Messages\\HandlerDDos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T17:48:36.295Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

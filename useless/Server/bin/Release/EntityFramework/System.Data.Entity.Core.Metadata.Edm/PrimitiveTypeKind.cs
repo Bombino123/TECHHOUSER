@@ -1,0 +1,37 @@
+namespace System.Data.Entity.Core.Metadata.Edm;
+
+public enum PrimitiveTypeKind
+{
+	Binary,
+	Boolean,
+	Byte,
+	DateTime,
+	Decimal,
+	Double,
+	Guid,
+	Single,
+	SByte,
+	Int16,
+	Int32,
+	Int64,
+	String,
+	Time,
+	DateTimeOffset,
+	Geometry,
+	Geography,
+	GeometryPoint,
+	GeometryLineString,
+	GeometryPolygon,
+	GeometryMultiPoint,
+	GeometryMultiLineString,
+	GeometryMultiPolygon,
+	GeometryCollection,
+	GeographyPoint,
+	GeographyLineString,
+	GeographyPolygon,
+	GeographyMultiPoint,
+	GeographyMultiLineString,
+	GeographyMultiPolygon,
+	GeographyCollection,
+	HierarchyId
+}

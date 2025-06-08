@@ -1,0 +1,16 @@
+IP: 127.0.0.1
+Country: LocalHost
+Group: 
+6: 
+Hwid: 8a9e89f97057dd0e7a27375f7b3c2d32
+UserPC: malic @ HOME-PC
+Camera: None
+Cpu: AMD Ryzen 7 5800X 8-Core Processor
+Gpu: NVIDIA GeForce GTX 1080 Ti
+Os: Майкрософт Windows 11 Pro 64-разрядная
+AntiVirus: N/A
+Version: 1.8
+TimeInstall: 29.01.2025
+Privilege: Admin
+Ping: 0
+Window: [Idle]
